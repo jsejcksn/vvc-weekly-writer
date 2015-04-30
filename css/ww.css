@@ -510,6 +510,16 @@ ul {
 
 /* -- IDs -- */
 
+#btn-grade, #btn-week {
+	height: 100%;
+	padding-left: .5em;
+	padding-right: .5em;
+	}
+
+#btn-grade {
+	border-right: 1px solid rgb(0, 0, 0);
+	}
+
 #content-container {
 	height: calc(100% - 3rem);
 	}
