@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<eMag pfn="Ml6J3cGfozgULLV2lkpuegfe7k5MFG0/XXvgjkL3oxA=SaIvPaP9d0hyy" uid="MCI5hM15iJOSn0DPVc9jj8ZODLdd5QVnM5v9uhBxgA4a1" ph="y1Ujt94CFGvVolqItm3ZJNGozJ8kwBjUHdfD2z3w68pdLsu3nWnLEqdYa2NpwW0ht3nBB2QZPs6Gq" ist="PyQdlRCsn8gQYyyZ+FYO+6x4LLHPkg9LxuJdtmhPkUrQ6" speedloaderid="7fc5787eda543a967616d4f0e8afb207" iid="99dce236de43c8a0310b426ca055e99a" vh="y7P2mqeL3Fjyfp21hpY0ML+olI8YRr5CJjS+PGwqfHKBZq36s9A2f/enYfbmX+B0YPLWi2pw/nXmW"> 
+  <generalSettings enableEMSLogo="true" readerStyleID="WhiteGadget" name="WW_2_1_TE" eMagStudioLanguage="en_US" startPageNumber="1" unnumberedPagesCount="0" promptFullscreen="false" disableScrollWheelPageNavigation="false" enableZoomPrint="false" enablePagesZoom="false"/>  
+  <usedPlugins> 
+    <plugin factoryClassName="qs.controls::FlexBookFactory" fileName="FlexBookDeclaration.swf"/>  
+    <plugin factoryClassName="emc.controlBar::ControlBarFactory" fileName="ControlBarDeclaration.swf"/>  
+    <plugin factoryClassName="emc.shape::ShapeFactory" fileName="ShapeDeclaration.swf"/>  
+    <plugin factoryClassName="emc.accessProtection::AccessProtectionFactory" fileName="AccessProtectionDeclaration.swf"/>  
+    <plugin factoryClassName="emc.reseller::ResellerFactory" fileName="ResellerDeclaration.swf"/>  
+    <plugin factoryClassName="emc.shareThis::ShareThisFactory" fileName="ShareThisDeclaration.swf"/>  
+    <plugin factoryClassName="emc.statistics::StatisticsFactory" fileName="StatisticsDeclaration.swf"/>  
+    <plugin factoryClassName="emc.videoPlayer::VideoPlayerFactory" fileName="VideoPlayerDeclaration.swf"/> 
+  </usedPlugins>  
+  <documentStage> 
+    <contentHolder id="instance2"> 
+      <properties> 
+        <documentStage backgroundColor="16777215" backgroundAlpha="1" enableBackgroundImage="true" backgroundImageType="BackgroundImageType.BITMAP" backgroundBitmapSrc="%MEDIA%WWBG_2.jpg" backgroundFlashSrc="" imageDisplayModeType="ImageDisplayModeType.STRETCH" imageHorizontalAlign="BackgroundImageType.CENTER" imageVerticalAlign="BackgroundImageType.CENTER" imageHorizontalOffset="0" imageVerticalOffset="0" flashHorizontalAlign="BackgroundImageType.CENTER" flashVerticalAlign="BackgroundImageType.CENTER" flashHorizontalOffset="0" flashVerticalOffset="0" isRelativeLayout="true" relativePercentWidth="100" relativePercentHeight="100" relativeWidth="1920" relativeHeight="1200" absoluteWidth="1440" absoluteHeight="900"/> 
+      </properties>  
+      <events/> 
+    </contentHolder> 
+  </documentStage>  
+  <documentHolder> 
+    <contentHolder id="instance3" className="qs.controls::FlexBook" zOrder="0" isSizeOverriden="false" isOnPageContentHodler="false" layer="BACK_LAYER"> 
+      <properties> 
+        <wieringaView useHardCover="false" flipDuration="202" cornerSize="10" doublePageZoom="false" pageShadowStrength="50" pageSlope="100"/> 
+      </properties>  
+      <events/>  
+      <anchor anchorNumber="5" parentAnchorNumber="5" parentInstanceID="instance2" horizontalPercentage="false" verticalPercentage="false" horizontalShift="0" verticalShift="-15.5" width="0" height="0" widthMode="SIZE_PX_MODE" heightMode="SIZE_PX_MODE"/> 
+    </contentHolder> 
+  </documentHolder>  
+  <contentHolders> 
+    <contentHolder id="instance4" className="emc.controlBar::ControlBar" zOrder="0" isSizeOverriden="false" isOnPageContentHodler="false" layer="BACK_LAYER"> 
+      <properties> 
+        <controlBar controlBarType="ControlBarType.CUSTOM" controlBarDirection="ControlBarDirectionType.HORIZONTAL" controlBarButtonsSize="170" controlBarButtonsSpacing="20" customButtons="0,2,9" customButtonsNewVersion="true" showEvenPageNumbers="false"/> 
+      </properties>  
+      <events/>  
+      <anchor anchorNumber="8" parentAnchorNumber="2" parentInstanceID="instance3" horizontalPercentage="false" verticalPercentage="false" horizontalShift="1.4210854715202004e-14" verticalShift="-5" width="0" height="0" widthMode="SIZE_PX_MODE" heightMode="SIZE_PX_MODE"/> 
+    </contentHolder> 
+  </contentHolders>  
+  <dynamicMediaLinkOptions loadLinkedVideosInWindow="false" loadLinkedImagesInWindow="false" loadLinkedFlashFilesInWindow="false" playLinkedAudioFilesAutomatically="false"> 
+    <videoSettings includeLinksToYouTubeVideos="true" useControlBar="false" controlBarType="ControlBarAppearanceType.DROP_UP" videoScale="100"/>  
+    <audioSettings loopSound="false" soundVolume="1"/> 
+  </dynamicMediaLinkOptions>  
+  <readerWindowOptions> 
+    <readerWindow id="emc.reader.ui::IndexWindow" name="Index Window" horizontalAlignment="left" verticalAlignment="top" horizontalOffset="100" verticalOffset="100" width="440" height="450"/>  
+    <readerWindow id="emc.reader.ui::BookmarksWindow" name="Bookmarks Window" horizontalAlignment="left" verticalAlignment="top" horizontalOffset="100" verticalOffset="100" width="300" height="400"/>  
+    <readerWindow id="emc.reader.ui::PrintWindow" name="Print Window" horizontalAlignment="left" verticalAlignment="top" horizontalOffset="100" verticalOffset="100" width="440" height="480"/>  
+    <readerWindow id="emc.shareThis::ShareThisWindow" name="Share This! Window" horizontalAlignment="center" verticalAlignment="center" horizontalOffset="-250" verticalOffset="-180" width="500" height="360"/>  
+    <readerWindow id="emc.reader.ui::SearchWindow" name="Search Window" horizontalAlignment="right" verticalAlignment="top" horizontalOffset="-400" verticalOffset="100" width="300" height="400"/> 
+  </readerWindowOptions>  
+  <PDFInfo pagesCount="21" pageWidth="834" pageHeight="1079" thumbWidth="70" thumbHeight="90" zoomWidth="1536" zoomHeight="1987" viewScale="90" autoDownsizeView="true" autoUpsizeView="true" downsizeSnap="5" pageJPGQuality="100" zoomPageJPGQuality="100" thumbnailJPGQuality="80" pageBackgroundColor="16777215" zoomMagnification="80"> 
+    <pdfBookmarks/>  
+    <renderProfile id="RenderingProfile.DEFAULT"> 
+      <settings renderIllustrationsAsBitmap="false"> 
+        <activity job="pages" engine="pdf2img" folderName="pages" fileNamePrefix="page" extension=".jpg"/>  
+        <activity job="zoompages" engine="pdf2img" folderName="zoompages" fileNamePrefix="zoompage" extension=".jpg"/>  
+        <activity job="thumbnails" engine="pdf2img" folderName="thumbnails" fileNamePrefix="thumbnail" extension=".jpg"/>  
+        <activity job="mobile" engine="pdf2img" folderName="" fileNamePrefix="" extension=""/> 
+      </settings> 
+    </renderProfile> 
+  </PDFInfo>  
+  <pages> 
+    <page pageNumber="0"> 
+      <contentHolders> 
+        <contentHolder id="instance6" className="emc.shape::Shape" zOrder="1" isSizeOverriden="true" isOnPageContentHodler="true" layer="DOCUMENTVIEW_LAYER"> 
+          <properties> 
+            <shape shapeType="ShapeType.RECTANGLE" importedLink="false" borderColor="0" borderAlpha="0" borderThickness="1" borderType="ShapeBorderType.HAIRLINE" backgroundColor="52479" backgroundAlpha="0"/> 
+          </properties>  
+          <events> 
+            <event type="MOUSE_CLICK" displayName="Mouse Click" description="Dispatched when object is clicked" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="TOGGLE_FULLSCREEN" actionGroup="General" name="Toggle Fullscreen" className="emc.plugin.actions::ToggleFullscreenAction"/> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OVER" displayName="Mouse Over" description="Dispatched when mouse overs object" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="SHOW_TOOLTIP" actionGroup="Interface and windows" name="Show Tooltip" className="emc.plugin.actions::ShowToolTipAction" toolTip="http://wwekly-writer.com"/>  
+                <action actionType="ADD_EFFECT" actionGroup="Effects and animation" name="Add Effect" className="emc.plugin.actions::AddEffectAction"> 
+                  <animations> 
+                    <animation className="emc.plugin.animation::BlurAnimation" duration="100" amount="10"/> 
+                  </animations> 
+                </action> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OUT" displayName="Mouse Out" description="Dispatched when mouse outs objects" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="HIDE_TOOLTIP" actionGroup="Interface and windows" name="Hide Tooltip" className="emc.plugin.actions::HideToolTipAction"/>  
+                <action actionType="REMOVE_ALL_EFFECTS" actionGroup="Effects and animation" name="Remove all Effects" className="emc.plugin.actions::RemoveAllEffectsAction"/> 
+              </actions> 
+            </event> 
+          </events>  
+          <anchor anchorNumber="7" parentAnchorNumber="7" parentInstanceID="instance3" horizontalPercentage="false" verticalPercentage="false" horizontalShift="15.6" verticalShift="16.7" width="721.9" height="292" widthMode="SIZE_PX_MODE" heightMode="SIZE_PX_MODE"/> 
+        </contentHolder>  
+        <contentHolder id="instance7" className="emc.shape::Shape" zOrder="2" isSizeOverriden="true" isOnPageContentHodler="true" layer="DOCUMENTVIEW_LAYER"> 
+          <properties> 
+            <shape shapeType="ShapeType.RECTANGLE" importedLink="false" borderColor="0" borderAlpha="0" borderThickness="1" borderType="ShapeBorderType.HAIRLINE" backgroundColor="52479" backgroundAlpha="0"/> 
+          </properties>  
+          <events> 
+            <event type="MOUSE_CLICK" displayName="Mouse Click" description="Dispatched when object is clicked" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="TOGGLE_FULLSCREEN" actionGroup="General" name="Toggle Fullscreen" className="emc.plugin.actions::ToggleFullscreenAction"/> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OVER" displayName="Mouse Over" description="Dispatched when mouse overs object" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="SHOW_TOOLTIP" actionGroup="Interface and windows" name="Show Tooltip" className="emc.plugin.actions::ShowToolTipAction" toolTip="http://wwekly-writer.com"/>  
+                <action actionType="ADD_EFFECT" actionGroup="Effects and animation" name="Add Effect" className="emc.plugin.actions::AddEffectAction"> 
+                  <animations> 
+                    <animation className="emc.plugin.animation::BlurAnimation" duration="100" amount="10"/> 
+                  </animations> 
+                </action> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OUT" displayName="Mouse Out" description="Dispatched when mouse outs objects" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="HIDE_TOOLTIP" actionGroup="Interface and windows" name="Hide Tooltip" className="emc.plugin.actions::HideToolTipAction"/>  
+                <action actionType="REMOVE_ALL_EFFECTS" actionGroup="Effects and animation" name="Remove all Effects" className="emc.plugin.actions::RemoveAllEffectsAction"/> 
+              </actions> 
+            </event> 
+          </events>  
+          <anchor anchorNumber="5" parentAnchorNumber="5" parentInstanceID="instance3" horizontalPercentage="false" verticalPercentage="false" horizontalShift="739.4" verticalShift="93.8" width="80" height="215" widthMode="SIZE_PX_MODE" heightMode="SIZE_PX_MODE"/> 
+        </contentHolder>  
+        <contentHolder id="instance8" className="emc.shape::Shape" zOrder="3" isSizeOverriden="true" isOnPageContentHodler="true" layer="DOCUMENTVIEW_LAYER"> 
+          <properties> 
+            <shape shapeType="ShapeType.CIRCLE_OVAL" importedLink="false" borderColor="0" borderAlpha="0" borderThickness="1" borderType="ShapeBorderType.HAIRLINE" backgroundColor="52479" backgroundAlpha="0"/> 
+          </properties>  
+          <events> 
+            <event type="MOUSE_CLICK" displayName="Mouse Click" description="Dispatched when object is clicked" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="GOTO_PAGE_N" actionGroup="Navigation" name="Go To Page..." className="emc.plugin.actions::GoToPageNAction" pageNumber="1"/> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OVER" displayName="Mouse Over" description="Dispatched when mouse overs object" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="SHOW_TOOLTIP" actionGroup="Interface and windows" name="Show Tooltip" className="emc.plugin.actions::ShowToolTipAction" toolTip="http://wwekly-writer.com"/>  
+                <action actionType="ADD_EFFECT" actionGroup="Effects and animation" name="Add Effect" className="emc.plugin.actions::AddEffectAction"> 
+                  <animations> 
+                    <animation className="emc.plugin.animation::BlurAnimation" duration="100" amount="10"/> 
+                  </animations> 
+                </action> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OUT" displayName="Mouse Out" description="Dispatched when mouse outs objects" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="HIDE_TOOLTIP" actionGroup="Interface and windows" name="Hide Tooltip" className="emc.plugin.actions::HideToolTipAction"/>  
+                <action actionType="REMOVE_ALL_EFFECTS" actionGroup="Effects and animation" name="Remove all Effects" className="emc.plugin.actions::RemoveAllEffectsAction"/> 
+              </actions> 
+            </event> 
+          </events>  
+          <anchor anchorNumber="5" parentAnchorNumber="5" parentInstanceID="instance3" horizontalPercentage="false" verticalPercentage="false" horizontalShift="740.3" verticalShift="36.4" width="55" height="55" widthMode="SIZE_PX_MODE" heightMode="SIZE_PX_MODE"/> 
+        </contentHolder>  
+        <contentHolder id="instance14" className="emc.shape::Shape" zOrder="4" isSizeOverriden="true" isOnPageContentHodler="true" layer="DOCUMENTVIEW_LAYER"> 
+          <properties> 
+            <shape shapeType="ShapeType.CIRCLE_OVAL" importedLink="false" borderColor="0" borderAlpha="0" borderThickness="1" borderType="ShapeBorderType.HAIRLINE" backgroundColor="52479" backgroundAlpha="0"/> 
+          </properties>  
+          <events> 
+            <event type="MOUSE_CLICK" displayName="Mouse Click" description="Dispatched when object is clicked" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="GOTO_PAGE_N" actionGroup="Navigation" name="Go To Page..." className="emc.plugin.actions::GoToPageNAction" pageNumber="2"/> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OVER" displayName="Mouse Over" description="Dispatched when mouse overs object" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="SHOW_TOOLTIP" actionGroup="Interface and windows" name="Show Tooltip" className="emc.plugin.actions::ShowToolTipAction" toolTip="http://wwekly-writer.com"/>  
+                <action actionType="ADD_EFFECT" actionGroup="Effects and animation" name="Add Effect" className="emc.plugin.actions::AddEffectAction"> 
+                  <animations> 
+                    <animation className="emc.plugin.animation::BlurAnimation" duration="100" amount="10"/> 
+                  </animations> 
+                </action> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OUT" displayName="Mouse Out" description="Dispatched when mouse outs objects" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="HIDE_TOOLTIP" actionGroup="Interface and windows" name="Hide Tooltip" className="emc.plugin.actions::HideToolTipAction"/>  
+                <action actionType="REMOVE_ALL_EFFECTS" actionGroup="Effects and animation" name="Remove all Effects" className="emc.plugin.actions::RemoveAllEffectsAction"/> 
+              </actions> 
+            </event> 
+          </events>  
+          <anchor anchorNumber="5" parentAnchorNumber="5" parentInstanceID="instance3" horizontalPercentage="false" verticalPercentage="false" horizontalShift="14.5" verticalShift="488.8" width="804" height="90" widthMode="SIZE_PX_MODE" heightMode="SIZE_PX_MODE"/> 
+        </contentHolder>  
+        <contentHolder id="instance15" className="emc.shape::Shape" zOrder="5" isSizeOverriden="true" isOnPageContentHodler="true" layer="DOCUMENTVIEW_LAYER"> 
+          <properties> 
+            <shape shapeType="ShapeType.CIRCLE_OVAL" importedLink="false" borderColor="0" borderAlpha="0" borderThickness="1" borderType="ShapeBorderType.HAIRLINE" backgroundColor="52479" backgroundAlpha="0"/> 
+          </properties>  
+          <events> 
+            <event type="MOUSE_CLICK" displayName="Mouse Click" description="Dispatched when object is clicked" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="GOTO_PAGE_N" actionGroup="Navigation" name="Go To Page..." className="emc.plugin.actions::GoToPageNAction" pageNumber="6"/> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OVER" displayName="Mouse Over" description="Dispatched when mouse overs object" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="SHOW_TOOLTIP" actionGroup="Interface and windows" name="Show Tooltip" className="emc.plugin.actions::ShowToolTipAction" toolTip="http://wwekly-writer.com"/>  
+                <action actionType="ADD_EFFECT" actionGroup="Effects and animation" name="Add Effect" className="emc.plugin.actions::AddEffectAction"> 
+                  <animations> 
+                    <animation className="emc.plugin.animation::BlurAnimation" duration="100" amount="10"/> 
+                  </animations> 
+                </action> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OUT" displayName="Mouse Out" description="Dispatched when mouse outs objects" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="HIDE_TOOLTIP" actionGroup="Interface and windows" name="Hide Tooltip" className="emc.plugin.actions::HideToolTipAction"/>  
+                <action actionType="REMOVE_ALL_EFFECTS" actionGroup="Effects and animation" name="Remove all Effects" className="emc.plugin.actions::RemoveAllEffectsAction"/> 
+              </actions> 
+            </event> 
+          </events>  
+          <anchor anchorNumber="5" parentAnchorNumber="5" parentInstanceID="instance3" horizontalPercentage="false" verticalPercentage="false" horizontalShift="14.55" verticalShift="592.75" width="804" height="90" widthMode="SIZE_PX_MODE" heightMode="SIZE_PX_MODE"/> 
+        </contentHolder>  
+        <contentHolder id="instance16" className="emc.shape::Shape" zOrder="6" isSizeOverriden="true" isOnPageContentHodler="true" layer="DOCUMENTVIEW_LAYER"> 
+          <properties> 
+            <shape shapeType="ShapeType.CIRCLE_OVAL" importedLink="false" borderColor="0" borderAlpha="0" borderThickness="1" borderType="ShapeBorderType.HAIRLINE" backgroundColor="52479" backgroundAlpha="0"/> 
+          </properties>  
+          <events> 
+            <event type="MOUSE_CLICK" displayName="Mouse Click" description="Dispatched when object is clicked" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="GOTO_PAGE_N" actionGroup="Navigation" name="Go To Page..." className="emc.plugin.actions::GoToPageNAction" pageNumber="10"/> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OVER" displayName="Mouse Over" description="Dispatched when mouse overs object" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="SHOW_TOOLTIP" actionGroup="Interface and windows" name="Show Tooltip" className="emc.plugin.actions::ShowToolTipAction" toolTip="http://wwekly-writer.com"/>  
+                <action actionType="ADD_EFFECT" actionGroup="Effects and animation" name="Add Effect" className="emc.plugin.actions::AddEffectAction"> 
+                  <animations> 
+                    <animation className="emc.plugin.animation::BlurAnimation" duration="100" amount="10"/> 
+                  </animations> 
+                </action> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OUT" displayName="Mouse Out" description="Dispatched when mouse outs objects" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="HIDE_TOOLTIP" actionGroup="Interface and windows" name="Hide Tooltip" className="emc.plugin.actions::HideToolTipAction"/>  
+                <action actionType="REMOVE_ALL_EFFECTS" actionGroup="Effects and animation" name="Remove all Effects" className="emc.plugin.actions::RemoveAllEffectsAction"/> 
+              </actions> 
+            </event> 
+          </events>  
+          <anchor anchorNumber="5" parentAnchorNumber="5" parentInstanceID="instance3" horizontalPercentage="false" verticalPercentage="false" horizontalShift="13.5" verticalShift="695.7" width="804" height="90" widthMode="SIZE_PX_MODE" heightMode="SIZE_PX_MODE"/> 
+        </contentHolder>  
+        <contentHolder id="instance17" className="emc.shape::Shape" zOrder="7" isSizeOverriden="true" isOnPageContentHodler="true" layer="DOCUMENTVIEW_LAYER"> 
+          <properties> 
+            <shape shapeType="ShapeType.CIRCLE_OVAL" importedLink="false" borderColor="0" borderAlpha="0" borderThickness="1" borderType="ShapeBorderType.HAIRLINE" backgroundColor="52479" backgroundAlpha="0"/> 
+          </properties>  
+          <events> 
+            <event type="MOUSE_CLICK" displayName="Mouse Click" description="Dispatched when object is clicked" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="GOTO_PAGE_N" actionGroup="Navigation" name="Go To Page..." className="emc.plugin.actions::GoToPageNAction" pageNumber="14"/> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OVER" displayName="Mouse Over" description="Dispatched when mouse overs object" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="SHOW_TOOLTIP" actionGroup="Interface and windows" name="Show Tooltip" className="emc.plugin.actions::ShowToolTipAction" toolTip="http://wwekly-writer.com"/>  
+                <action actionType="ADD_EFFECT" actionGroup="Effects and animation" name="Add Effect" className="emc.plugin.actions::AddEffectAction"> 
+                  <animations> 
+                    <animation className="emc.plugin.animation::BlurAnimation" duration="100" amount="10"/> 
+                  </animations> 
+                </action> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OUT" displayName="Mouse Out" description="Dispatched when mouse outs objects" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="HIDE_TOOLTIP" actionGroup="Interface and windows" name="Hide Tooltip" className="emc.plugin.actions::HideToolTipAction"/>  
+                <action actionType="REMOVE_ALL_EFFECTS" actionGroup="Effects and animation" name="Remove all Effects" className="emc.plugin.actions::RemoveAllEffectsAction"/> 
+              </actions> 
+            </event> 
+          </events>  
+          <anchor anchorNumber="5" parentAnchorNumber="5" parentInstanceID="instance3" horizontalPercentage="false" verticalPercentage="false" horizontalShift="14.6" verticalShift="798.6" width="804" height="90" widthMode="SIZE_PX_MODE" heightMode="SIZE_PX_MODE"/> 
+        </contentHolder>  
+        <contentHolder id="instance18" className="emc.shape::Shape" zOrder="8" isSizeOverriden="true" isOnPageContentHodler="true" layer="DOCUMENTVIEW_LAYER"> 
+          <properties> 
+            <shape shapeType="ShapeType.CIRCLE_OVAL" importedLink="false" borderColor="0" borderAlpha="0" borderThickness="1" borderType="ShapeBorderType.HAIRLINE" backgroundColor="52479" backgroundAlpha="0"/> 
+          </properties>  
+          <events> 
+            <event type="MOUSE_CLICK" displayName="Mouse Click" description="Dispatched when object is clicked" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="GOTO_PAGE_N" actionGroup="Navigation" name="Go To Page..." className="emc.plugin.actions::GoToPageNAction" pageNumber="18"/> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OVER" displayName="Mouse Over" description="Dispatched when mouse overs object" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="SHOW_TOOLTIP" actionGroup="Interface and windows" name="Show Tooltip" className="emc.plugin.actions::ShowToolTipAction" toolTip="http://wwekly-writer.com"/>  
+                <action actionType="ADD_EFFECT" actionGroup="Effects and animation" name="Add Effect" className="emc.plugin.actions::AddEffectAction"> 
+                  <animations> 
+                    <animation className="emc.plugin.animation::BlurAnimation" duration="100" amount="10"/> 
+                  </animations> 
+                </action> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OUT" displayName="Mouse Out" description="Dispatched when mouse outs objects" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="HIDE_TOOLTIP" actionGroup="Interface and windows" name="Hide Tooltip" className="emc.plugin.actions::HideToolTipAction"/>  
+                <action actionType="REMOVE_ALL_EFFECTS" actionGroup="Effects and animation" name="Remove all Effects" className="emc.plugin.actions::RemoveAllEffectsAction"/> 
+              </actions> 
+            </event> 
+          </events>  
+          <anchor anchorNumber="5" parentAnchorNumber="5" parentInstanceID="instance3" horizontalPercentage="false" verticalPercentage="false" horizontalShift="14.5" verticalShift="899.55" width="804" height="90" widthMode="SIZE_PX_MODE" heightMode="SIZE_PX_MODE"/> 
+        </contentHolder> 
+      </contentHolders> 
+    </page>  
+    <page pageNumber="1"> 
+      <contentHolders> 
+        <contentHolder id="instance9" className="emc.shape::Shape" zOrder="1" isSizeOverriden="true" isOnPageContentHodler="true" layer="DOCUMENTVIEW_LAYER"> 
+          <properties> 
+            <shape shapeType="ShapeType.CIRCLE_OVAL" importedLink="false" borderColor="0" borderAlpha="0" borderThickness="1" borderType="ShapeBorderType.HAIRLINE" backgroundColor="52479" backgroundAlpha="0"/> 
+          </properties>  
+          <events> 
+            <event type="MOUSE_CLICK" displayName="Mouse Click" description="Dispatched when object is clicked" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="GOTO_PAGE_N" actionGroup="Navigation" name="Go To Page..." className="emc.plugin.actions::GoToPageNAction" pageNumber="1"/> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OVER" displayName="Mouse Over" description="Dispatched when mouse overs object" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="SHOW_TOOLTIP" actionGroup="Interface and windows" name="Show Tooltip" className="emc.plugin.actions::ShowToolTipAction" toolTip="http://wwekly-writer.com"/>  
+                <action actionType="ADD_EFFECT" actionGroup="Effects and animation" name="Add Effect" className="emc.plugin.actions::AddEffectAction"> 
+                  <animations> 
+                    <animation className="emc.plugin.animation::BlurAnimation" duration="100" amount="10"/> 
+                  </animations> 
+                </action> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OUT" displayName="Mouse Out" description="Dispatched when mouse outs objects" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="HIDE_TOOLTIP" actionGroup="Interface and windows" name="Hide Tooltip" className="emc.plugin.actions::HideToolTipAction"/>  
+                <action actionType="REMOVE_ALL_EFFECTS" actionGroup="Effects and animation" name="Remove all Effects" className="emc.plugin.actions::RemoveAllEffectsAction"/> 
+              </actions> 
+            </event> 
+          </events>  
+          <anchor anchorNumber="5" parentAnchorNumber="5" parentInstanceID="instance3" horizontalPercentage="false" verticalPercentage="false" horizontalShift="741.35" verticalShift="36.4" width="55" height="55" widthMode="SIZE_PX_MODE" heightMode="SIZE_PX_MODE"/> 
+        </contentHolder> 
+      </contentHolders> 
+    </page>  
+    <page pageNumber="3"> 
+      <contentHolders> 
+        <contentHolder id="instance26" className="emc.shape::Shape" zOrder="1" isSizeOverriden="true" isOnPageContentHodler="true" layer="DOCUMENTVIEW_LAYER"> 
+          <properties> 
+            <shape shapeType="ShapeType.CIRCLE_OVAL" importedLink="false" borderColor="0" borderAlpha="0" borderThickness="1" borderType="ShapeBorderType.HAIRLINE" backgroundColor="52479" backgroundAlpha="0"/> 
+          </properties>  
+          <events> 
+            <event type="MOUSE_CLICK" displayName="Mouse Click" description="Dispatched when object is clicked" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="OPEN_VIDEO_IN_WINDOW" actionGroup="Media" name="Open Video in Window" className="emc.plugin.actions::OpenVideoInWindowAction" videoSrcType="VideoSrcType.LINK" localVideoSrc="" linkVideoSrc="http://e8ec7dc7c085d3470af6-1afcbbc818dfc5846ab38b22649863b7.r43.cf2.rackcdn.com/WW_EC01.flv" youtubeVideoID="" useControlBar="true" controlBarType="ControlBarAppearanceType.DROP_UP" videoScale="100"/> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OVER" displayName="Mouse Over" description="Dispatched when mouse overs object" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="SHOW_TOOLTIP" actionGroup="Interface and windows" name="Show Tooltip" className="emc.plugin.actions::ShowToolTipAction" toolTip="http://wwekly-writer.com"/>  
+                <action actionType="ADD_EFFECT" actionGroup="Effects and animation" name="Add Effect" className="emc.plugin.actions::AddEffectAction"> 
+                  <animations> 
+                    <animation className="emc.plugin.animation::BlurAnimation" duration="100" amount="10"/> 
+                  </animations> 
+                </action> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OUT" displayName="Mouse Out" description="Dispatched when mouse outs objects" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="HIDE_TOOLTIP" actionGroup="Interface and windows" name="Hide Tooltip" className="emc.plugin.actions::HideToolTipAction"/>  
+                <action actionType="REMOVE_ALL_EFFECTS" actionGroup="Effects and animation" name="Remove all Effects" className="emc.plugin.actions::RemoveAllEffectsAction"/> 
+              </actions> 
+            </event> 
+          </events>  
+          <anchor anchorNumber="5" parentAnchorNumber="5" parentInstanceID="instance3" horizontalPercentage="false" verticalPercentage="false" horizontalShift="16" verticalShift="17" width="804" height="195" widthMode="SIZE_PX_MODE" heightMode="SIZE_PX_MODE"/> 
+        </contentHolder> 
+      </contentHolders> 
+    </page>  
+    <page pageNumber="4"> 
+      <contentHolders> 
+        <contentHolder id="instance27" className="emc.shape::Shape" zOrder="1" isSizeOverriden="true" isOnPageContentHodler="true" layer="DOCUMENTVIEW_LAYER"> 
+          <properties> 
+            <shape shapeType="ShapeType.CIRCLE_OVAL" importedLink="false" borderColor="0" borderAlpha="0" borderThickness="1" borderType="ShapeBorderType.HAIRLINE" backgroundColor="52479" backgroundAlpha="0"/> 
+          </properties>  
+          <events> 
+            <event type="MOUSE_CLICK" displayName="Mouse Click" description="Dispatched when object is clicked" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="GOTO_PAGE_N" actionGroup="Navigation" name="Go To Page..." className="emc.plugin.actions::GoToPageNAction" pageNumber="1"/> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OVER" displayName="Mouse Over" description="Dispatched when mouse overs object" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="SHOW_TOOLTIP" actionGroup="Interface and windows" name="Show Tooltip" className="emc.plugin.actions::ShowToolTipAction" toolTip="http://wwekly-writer.com"/>  
+                <action actionType="ADD_EFFECT" actionGroup="Effects and animation" name="Add Effect" className="emc.plugin.actions::AddEffectAction"> 
+                  <animations> 
+                    <animation className="emc.plugin.animation::BlurAnimation" duration="100" amount="10"/> 
+                  </animations> 
+                </action> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OUT" displayName="Mouse Out" description="Dispatched when mouse outs objects" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="HIDE_TOOLTIP" actionGroup="Interface and windows" name="Hide Tooltip" className="emc.plugin.actions::HideToolTipAction"/>  
+                <action actionType="REMOVE_ALL_EFFECTS" actionGroup="Effects and animation" name="Remove all Effects" className="emc.plugin.actions::RemoveAllEffectsAction"/> 
+              </actions> 
+            </event> 
+          </events>  
+          <anchor anchorNumber="5" parentAnchorNumber="5" parentInstanceID="instance3" horizontalPercentage="false" verticalPercentage="false" horizontalShift="740" verticalShift="36" width="55" height="55" widthMode="SIZE_PX_MODE" heightMode="SIZE_PX_MODE"/> 
+        </contentHolder> 
+      </contentHolders> 
+    </page>  
+    <page pageNumber="5"> 
+      <contentHolders> 
+        <contentHolder id="instance11" className="emc.shape::Shape" zOrder="1" isSizeOverriden="true" isOnPageContentHodler="true" layer="DOCUMENTVIEW_LAYER"> 
+          <properties> 
+            <shape shapeType="ShapeType.CIRCLE_OVAL" importedLink="false" borderColor="0" borderAlpha="0" borderThickness="1" borderType="ShapeBorderType.HAIRLINE" backgroundColor="52479" backgroundAlpha="0"/> 
+          </properties>  
+          <events> 
+            <event type="MOUSE_CLICK" displayName="Mouse Click" description="Dispatched when object is clicked" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="GOTO_PAGE_N" actionGroup="Navigation" name="Go To Page..." className="emc.plugin.actions::GoToPageNAction" pageNumber="1"/> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OVER" displayName="Mouse Over" description="Dispatched when mouse overs object" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="SHOW_TOOLTIP" actionGroup="Interface and windows" name="Show Tooltip" className="emc.plugin.actions::ShowToolTipAction" toolTip="http://wwekly-writer.com"/>  
+                <action actionType="ADD_EFFECT" actionGroup="Effects and animation" name="Add Effect" className="emc.plugin.actions::AddEffectAction"> 
+                  <animations> 
+                    <animation className="emc.plugin.animation::BlurAnimation" duration="100" amount="10"/> 
+                  </animations> 
+                </action> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OUT" displayName="Mouse Out" description="Dispatched when mouse outs objects" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="HIDE_TOOLTIP" actionGroup="Interface and windows" name="Hide Tooltip" className="emc.plugin.actions::HideToolTipAction"/>  
+                <action actionType="REMOVE_ALL_EFFECTS" actionGroup="Effects and animation" name="Remove all Effects" className="emc.plugin.actions::RemoveAllEffectsAction"/> 
+              </actions> 
+            </event> 
+          </events>  
+          <anchor anchorNumber="5" parentAnchorNumber="5" parentInstanceID="instance3" horizontalPercentage="false" verticalPercentage="false" horizontalShift="739.3" verticalShift="39.4" width="55" height="55" widthMode="SIZE_PX_MODE" heightMode="SIZE_PX_MODE"/> 
+        </contentHolder> 
+      </contentHolders> 
+    </page>  
+    <page pageNumber="8"> 
+      <contentHolders> 
+        <contentHolder id="instance28" className="emc.shape::Shape" zOrder="1" isSizeOverriden="true" isOnPageContentHodler="true" layer="DOCUMENTVIEW_LAYER"> 
+          <properties> 
+            <shape shapeType="ShapeType.CIRCLE_OVAL" importedLink="false" borderColor="0" borderAlpha="0" borderThickness="1" borderType="ShapeBorderType.HAIRLINE" backgroundColor="52479" backgroundAlpha="0"/> 
+          </properties>  
+          <events> 
+            <event type="MOUSE_CLICK" displayName="Mouse Click" description="Dispatched when object is clicked" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="GOTO_PAGE_N" actionGroup="Navigation" name="Go To Page..." className="emc.plugin.actions::GoToPageNAction" pageNumber="1"/> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OVER" displayName="Mouse Over" description="Dispatched when mouse overs object" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="SHOW_TOOLTIP" actionGroup="Interface and windows" name="Show Tooltip" className="emc.plugin.actions::ShowToolTipAction" toolTip="http://wwekly-writer.com"/>  
+                <action actionType="ADD_EFFECT" actionGroup="Effects and animation" name="Add Effect" className="emc.plugin.actions::AddEffectAction"> 
+                  <animations> 
+                    <animation className="emc.plugin.animation::BlurAnimation" duration="100" amount="10"/> 
+                  </animations> 
+                </action> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OUT" displayName="Mouse Out" description="Dispatched when mouse outs objects" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="HIDE_TOOLTIP" actionGroup="Interface and windows" name="Hide Tooltip" className="emc.plugin.actions::HideToolTipAction"/>  
+                <action actionType="REMOVE_ALL_EFFECTS" actionGroup="Effects and animation" name="Remove all Effects" className="emc.plugin.actions::RemoveAllEffectsAction"/> 
+              </actions> 
+            </event> 
+          </events>  
+          <anchor anchorNumber="5" parentAnchorNumber="5" parentInstanceID="instance3" horizontalPercentage="false" verticalPercentage="false" horizontalShift="740" verticalShift="36" width="55" height="55" widthMode="SIZE_PX_MODE" heightMode="SIZE_PX_MODE"/> 
+        </contentHolder> 
+      </contentHolders> 
+    </page>  
+    <page pageNumber="9"> 
+      <contentHolders> 
+        <contentHolder id="instance13" className="emc.shape::Shape" zOrder="1" isSizeOverriden="true" isOnPageContentHodler="true" layer="DOCUMENTVIEW_LAYER"> 
+          <properties> 
+            <shape shapeType="ShapeType.CIRCLE_OVAL" importedLink="false" borderColor="0" borderAlpha="0" borderThickness="1" borderType="ShapeBorderType.HAIRLINE" backgroundColor="52479" backgroundAlpha="0"/> 
+          </properties>  
+          <events> 
+            <event type="MOUSE_CLICK" displayName="Mouse Click" description="Dispatched when object is clicked" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="GOTO_PAGE_N" actionGroup="Navigation" name="Go To Page..." className="emc.plugin.actions::GoToPageNAction" pageNumber="1"/> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OVER" displayName="Mouse Over" description="Dispatched when mouse overs object" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="SHOW_TOOLTIP" actionGroup="Interface and windows" name="Show Tooltip" className="emc.plugin.actions::ShowToolTipAction" toolTip="http://wwekly-writer.com"/>  
+                <action actionType="ADD_EFFECT" actionGroup="Effects and animation" name="Add Effect" className="emc.plugin.actions::AddEffectAction"> 
+                  <animations> 
+                    <animation className="emc.plugin.animation::BlurAnimation" duration="100" amount="10"/> 
+                  </animations> 
+                </action> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OUT" displayName="Mouse Out" description="Dispatched when mouse outs objects" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="HIDE_TOOLTIP" actionGroup="Interface and windows" name="Hide Tooltip" className="emc.plugin.actions::HideToolTipAction"/>  
+                <action actionType="REMOVE_ALL_EFFECTS" actionGroup="Effects and animation" name="Remove all Effects" className="emc.plugin.actions::RemoveAllEffectsAction"/> 
+              </actions> 
+            </event> 
+          </events>  
+          <anchor anchorNumber="5" parentAnchorNumber="5" parentInstanceID="instance3" horizontalPercentage="false" verticalPercentage="false" horizontalShift="739.35" verticalShift="39.35" width="55" height="55" widthMode="SIZE_PX_MODE" heightMode="SIZE_PX_MODE"/> 
+        </contentHolder> 
+      </contentHolders> 
+    </page>  
+    <page pageNumber="12"> 
+      <contentHolders> 
+        <contentHolder id="instance29" className="emc.shape::Shape" zOrder="1" isSizeOverriden="true" isOnPageContentHodler="true" layer="DOCUMENTVIEW_LAYER"> 
+          <properties> 
+            <shape shapeType="ShapeType.CIRCLE_OVAL" importedLink="false" borderColor="0" borderAlpha="0" borderThickness="1" borderType="ShapeBorderType.HAIRLINE" backgroundColor="52479" backgroundAlpha="0"/> 
+          </properties>  
+          <events> 
+            <event type="MOUSE_CLICK" displayName="Mouse Click" description="Dispatched when object is clicked" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="GOTO_PAGE_N" actionGroup="Navigation" name="Go To Page..." className="emc.plugin.actions::GoToPageNAction" pageNumber="1"/> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OVER" displayName="Mouse Over" description="Dispatched when mouse overs object" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="SHOW_TOOLTIP" actionGroup="Interface and windows" name="Show Tooltip" className="emc.plugin.actions::ShowToolTipAction" toolTip="http://wwekly-writer.com"/>  
+                <action actionType="ADD_EFFECT" actionGroup="Effects and animation" name="Add Effect" className="emc.plugin.actions::AddEffectAction"> 
+                  <animations> 
+                    <animation className="emc.plugin.animation::BlurAnimation" duration="100" amount="10"/> 
+                  </animations> 
+                </action> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OUT" displayName="Mouse Out" description="Dispatched when mouse outs objects" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="HIDE_TOOLTIP" actionGroup="Interface and windows" name="Hide Tooltip" className="emc.plugin.actions::HideToolTipAction"/>  
+                <action actionType="REMOVE_ALL_EFFECTS" actionGroup="Effects and animation" name="Remove all Effects" className="emc.plugin.actions::RemoveAllEffectsAction"/> 
+              </actions> 
+            </event> 
+          </events>  
+          <anchor anchorNumber="5" parentAnchorNumber="5" parentInstanceID="instance3" horizontalPercentage="false" verticalPercentage="false" horizontalShift="740" verticalShift="36" width="55" height="55" widthMode="SIZE_PX_MODE" heightMode="SIZE_PX_MODE"/> 
+        </contentHolder> 
+      </contentHolders> 
+    </page>  
+    <page pageNumber="13"> 
+      <contentHolders> 
+        <contentHolder id="instance30" className="emc.shape::Shape" zOrder="1" isSizeOverriden="true" isOnPageContentHodler="true" layer="DOCUMENTVIEW_LAYER"> 
+          <properties> 
+            <shape shapeType="ShapeType.CIRCLE_OVAL" importedLink="false" borderColor="0" borderAlpha="0" borderThickness="1" borderType="ShapeBorderType.HAIRLINE" backgroundColor="52479" backgroundAlpha="0"/> 
+          </properties>  
+          <events> 
+            <event type="MOUSE_CLICK" displayName="Mouse Click" description="Dispatched when object is clicked" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="GOTO_PAGE_N" actionGroup="Navigation" name="Go To Page..." className="emc.plugin.actions::GoToPageNAction" pageNumber="1"/> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OVER" displayName="Mouse Over" description="Dispatched when mouse overs object" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="SHOW_TOOLTIP" actionGroup="Interface and windows" name="Show Tooltip" className="emc.plugin.actions::ShowToolTipAction" toolTip="http://wwekly-writer.com"/>  
+                <action actionType="ADD_EFFECT" actionGroup="Effects and animation" name="Add Effect" className="emc.plugin.actions::AddEffectAction"> 
+                  <animations> 
+                    <animation className="emc.plugin.animation::BlurAnimation" duration="100" amount="10"/> 
+                  </animations> 
+                </action> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OUT" displayName="Mouse Out" description="Dispatched when mouse outs objects" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="HIDE_TOOLTIP" actionGroup="Interface and windows" name="Hide Tooltip" className="emc.plugin.actions::HideToolTipAction"/>  
+                <action actionType="REMOVE_ALL_EFFECTS" actionGroup="Effects and animation" name="Remove all Effects" className="emc.plugin.actions::RemoveAllEffectsAction"/> 
+              </actions> 
+            </event> 
+          </events>  
+          <anchor anchorNumber="5" parentAnchorNumber="5" parentInstanceID="instance3" horizontalPercentage="false" verticalPercentage="false" horizontalShift="739" verticalShift="36" width="55" height="55" widthMode="SIZE_PX_MODE" heightMode="SIZE_PX_MODE"/> 
+        </contentHolder> 
+      </contentHolders> 
+    </page>  
+    <page pageNumber="16"> 
+      <contentHolders> 
+        <contentHolder id="instance31" className="emc.shape::Shape" zOrder="1" isSizeOverriden="true" isOnPageContentHodler="true" layer="DOCUMENTVIEW_LAYER"> 
+          <properties> 
+            <shape shapeType="ShapeType.CIRCLE_OVAL" importedLink="false" borderColor="0" borderAlpha="0" borderThickness="1" borderType="ShapeBorderType.HAIRLINE" backgroundColor="52479" backgroundAlpha="0"/> 
+          </properties>  
+          <events> 
+            <event type="MOUSE_CLICK" displayName="Mouse Click" description="Dispatched when object is clicked" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="GOTO_PAGE_N" actionGroup="Navigation" name="Go To Page..." className="emc.plugin.actions::GoToPageNAction" pageNumber="1"/> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OVER" displayName="Mouse Over" description="Dispatched when mouse overs object" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="SHOW_TOOLTIP" actionGroup="Interface and windows" name="Show Tooltip" className="emc.plugin.actions::ShowToolTipAction" toolTip="http://wwekly-writer.com"/>  
+                <action actionType="ADD_EFFECT" actionGroup="Effects and animation" name="Add Effect" className="emc.plugin.actions::AddEffectAction"> 
+                  <animations> 
+                    <animation className="emc.plugin.animation::BlurAnimation" duration="100" amount="10"/> 
+                  </animations> 
+                </action> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OUT" displayName="Mouse Out" description="Dispatched when mouse outs objects" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="HIDE_TOOLTIP" actionGroup="Interface and windows" name="Hide Tooltip" className="emc.plugin.actions::HideToolTipAction"/>  
+                <action actionType="REMOVE_ALL_EFFECTS" actionGroup="Effects and animation" name="Remove all Effects" className="emc.plugin.actions::RemoveAllEffectsAction"/> 
+              </actions> 
+            </event> 
+          </events>  
+          <anchor anchorNumber="5" parentAnchorNumber="5" parentInstanceID="instance3" horizontalPercentage="false" verticalPercentage="false" horizontalShift="739" verticalShift="36" width="55" height="55" widthMode="SIZE_PX_MODE" heightMode="SIZE_PX_MODE"/> 
+        </contentHolder> 
+      </contentHolders> 
+    </page>  
+    <page pageNumber="17"> 
+      <contentHolders> 
+        <contentHolder id="instance32" className="emc.shape::Shape" zOrder="1" isSizeOverriden="true" isOnPageContentHodler="true" layer="DOCUMENTVIEW_LAYER"> 
+          <properties> 
+            <shape shapeType="ShapeType.CIRCLE_OVAL" importedLink="false" borderColor="0" borderAlpha="0" borderThickness="1" borderType="ShapeBorderType.HAIRLINE" backgroundColor="52479" backgroundAlpha="0"/> 
+          </properties>  
+          <events> 
+            <event type="MOUSE_CLICK" displayName="Mouse Click" description="Dispatched when object is clicked" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="GOTO_PAGE_N" actionGroup="Navigation" name="Go To Page..." className="emc.plugin.actions::GoToPageNAction" pageNumber="1"/> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OVER" displayName="Mouse Over" description="Dispatched when mouse overs object" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="SHOW_TOOLTIP" actionGroup="Interface and windows" name="Show Tooltip" className="emc.plugin.actions::ShowToolTipAction" toolTip="http://wwekly-writer.com"/>  
+                <action actionType="ADD_EFFECT" actionGroup="Effects and animation" name="Add Effect" className="emc.plugin.actions::AddEffectAction"> 
+                  <animations> 
+                    <animation className="emc.plugin.animation::BlurAnimation" duration="100" amount="10"/> 
+                  </animations> 
+                </action> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OUT" displayName="Mouse Out" description="Dispatched when mouse outs objects" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="HIDE_TOOLTIP" actionGroup="Interface and windows" name="Hide Tooltip" className="emc.plugin.actions::HideToolTipAction"/>  
+                <action actionType="REMOVE_ALL_EFFECTS" actionGroup="Effects and animation" name="Remove all Effects" className="emc.plugin.actions::RemoveAllEffectsAction"/> 
+              </actions> 
+            </event> 
+          </events>  
+          <anchor anchorNumber="5" parentAnchorNumber="5" parentInstanceID="instance3" horizontalPercentage="false" verticalPercentage="false" horizontalShift="739" verticalShift="37" width="55" height="55" widthMode="SIZE_PX_MODE" heightMode="SIZE_PX_MODE"/> 
+        </contentHolder> 
+      </contentHolders> 
+    </page>  
+    <page pageNumber="20"> 
+      <contentHolders> 
+        <contentHolder id="instance33" className="emc.shape::Shape" zOrder="1" isSizeOverriden="true" isOnPageContentHodler="true" layer="DOCUMENTVIEW_LAYER"> 
+          <properties> 
+            <shape shapeType="ShapeType.CIRCLE_OVAL" importedLink="false" borderColor="0" borderAlpha="0" borderThickness="1" borderType="ShapeBorderType.HAIRLINE" backgroundColor="52479" backgroundAlpha="0"/> 
+          </properties>  
+          <events> 
+            <event type="MOUSE_CLICK" displayName="Mouse Click" description="Dispatched when object is clicked" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="GOTO_PAGE_N" actionGroup="Navigation" name="Go To Page..." className="emc.plugin.actions::GoToPageNAction" pageNumber="1"/> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OVER" displayName="Mouse Over" description="Dispatched when mouse overs object" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="SHOW_TOOLTIP" actionGroup="Interface and windows" name="Show Tooltip" className="emc.plugin.actions::ShowToolTipAction" toolTip="http://wwekly-writer.com"/>  
+                <action actionType="ADD_EFFECT" actionGroup="Effects and animation" name="Add Effect" className="emc.plugin.actions::AddEffectAction"> 
+                  <animations> 
+                    <animation className="emc.plugin.animation::BlurAnimation" duration="100" amount="10"/> 
+                  </animations> 
+                </action> 
+              </actions> 
+            </event>  
+            <event type="MOUSE_OUT" displayName="Mouse Out" description="Dispatched when mouse outs objects" supportMobile="false" className="emc.plugin.events::PluginEvent"> 
+              <actions> 
+                <action actionType="HIDE_TOOLTIP" actionGroup="Interface and windows" name="Hide Tooltip" className="emc.plugin.actions::HideToolTipAction"/>  
+                <action actionType="REMOVE_ALL_EFFECTS" actionGroup="Effects and animation" name="Remove all Effects" className="emc.plugin.actions::RemoveAllEffectsAction"/> 
+              </actions> 
+            </event> 
+          </events>  
+          <anchor anchorNumber="5" parentAnchorNumber="5" parentInstanceID="instance3" horizontalPercentage="false" verticalPercentage="false" horizontalShift="739" verticalShift="36" width="55" height="55" widthMode="SIZE_PX_MODE" heightMode="SIZE_PX_MODE"/> 
+        </contentHolder> 
+      </contentHolders> 
+    </page> 
+  </pages>  
+  <language id="English" name="English" fileName="English.xml"> 
+    <labelGroups> 
+      <labelGroup id="General" name="General"> 
+        <labels> 
+          <label id="generalBookmarks" description="Bookmarks window title"><![CDATA[]]></label>  
+          <label id="lblNoBookmarks" description="No Bookmarks label"><![CDATA[]]></label>  
+          <label id="generalGoToPageN" description="Go To Page N window title"><![CDATA[Find Your Lesson]]></label>  
+          <label id="lblGo" description="Go label"><![CDATA[]]></label>  
+          <label id="generalCancel" description="Cancel"><![CDATA[]]></label>  
+          <label id="generalHelp" description="Help window title"><![CDATA[]]></label>  
+          <label id="generalHelpWindowText" description="Help window text"><![CDATA[]]></label>  
+          <label id="generalImage" description="Image window title"><![CDATA[]]></label>  
+          <label id="generalIndex" description="Index window title"><![CDATA[Find Your lesson]]></label>  
+          <label id="lblPage" description="Page label"><![CDATA[Page]]></label>  
+          <label id="generalSearch" description="Search window title"><![CDATA[]]></label>  
+          <label id="lblSearchedWordFoundOnPage" description="Word(s) found on page label"><![CDATA[]]></label>  
+          <label id="lblNoMatchesFound" description="No matches found label"><![CDATA[]]></label>  
+          <label id="generalSWF" description="SWF window title"><![CDATA[]]></label>  
+          <label id="generalVideo" description="Video window title"><![CDATA[Let's Write!]]></label>  
+          <label id="generalClose" description="Close"><![CDATA[Close]]></label>  
+          <label id="generalLoading" description="Loading"><![CDATA[Loading...]]></label>  
+          <label id="generalPrintThisPage" description="Print This Page button label"><![CDATA[]]></label>  
+          <label id="generalToggleFullscreenText" description="Toggle Fullscreen text"><![CDATA[View this Week]]></label>  
+          <label id="generalToggleFullscreenPrompt" description="Toggle Fullscreen question"><![CDATA[Enter full-screen?]]></label>  
+          <label id="generalToggleFullscreenNotation" description="Fullscreen escape label"><![CDATA[Press ESC to minimize this publication.]]></label>  
+          <label id="generalToggleFullscreenYes" description="Yes button label"><![CDATA[Yes]]></label>  
+          <label id="generalToggleFullscreenNo" description="No button label"><![CDATA[No]]></label>  
+          <label id="generalBrokenImage" description="Failed to load image label"><![CDATA[Image Will Not Load. Please Refresh Your Browser.]]></label>  
+          <label id="generalSlideShow" description="SlideShow window title"><![CDATA[]]></label>  
+          <label id="generalLoadingTexts" description="Loading Page Texts label"><![CDATA[Your lesson is loading]]></label> 
+        </labels> 
+      </labelGroup>  
+      <labelGroup id="PrintWindow" name="Print Window"> 
+        <labels> 
+          <label id="wndPrintTitle" description="Print window title"><![CDATA[]]></label>  
+          <label id="btnSelectAllLabel" description="Select All button label"><![CDATA[]]></label>  
+          <label id="btnSelectNoneLabel" description="Select None button label"><![CDATA[]]></label>  
+          <label id="btnPrintLabel" description="Print button label"><![CDATA[]]></label> 
+        </labels> 
+      </labelGroup>  
+      <labelGroup id="GeneratePrintImagesWindow" name="Print Progress Window"> 
+        <labels> 
+          <label id="wndGeneratePrintImagesTitle" description="Print progress window title"><![CDATA[]]></label>  
+          <label id="lblLoadingPagesProgress" description="Loading pages label"><![CDATA[]]></label>  
+          <label id="lblNoPagesSelected" description="No Pages Selected label"><![CDATA[]]></label>  
+          <label id="lblPrintingProgress" description="Printing label"><![CDATA[]]></label>  
+          <label id="lblPrintingFailed" description="Printing failed label"><![CDATA[]]></label>  
+          <label id="btnOKLabel" description="OK button label"><![CDATA[]]></label> 
+        </labels> 
+      </labelGroup>  
+      <labelGroup id="VideoPlayer" name="VideoPlayer"> 
+        <labels> 
+          <label id="playButtonToolTip" description="Play Button Tooltip"><![CDATA[Play]]></label>  
+          <label id="pauseButtonToolTip" description="Pause Button Tooltip"><![CDATA[Pause]]></label>  
+          <label id="turnRepeatOnButtonToolTip" description="Turn Repeat On Button Tooltip"><![CDATA[Turn repeat on]]></label>  
+          <label id="turnRepeatOffButtonToolTip" description="Turn Repeat Off Button Tooltip"><![CDATA[Turn repeat off]]></label>  
+          <label id="soundButtonToolTip" description="Sound Button Tooltip"><![CDATA[Sound]]></label>  
+          <label id="muteButtonToolTip" description="Mute Button Tooltip"><![CDATA[Mute]]></label>  
+          <label id="stopButtonToolTip" description="Stop Button Tooltip"><![CDATA[Stop]]></label> 
+        </labels> 
+      </labelGroup>  
+      <labelGroup id="SlideShow" name="SlideShow"> 
+        <labels> 
+          <label id="slideShowPlayButtonToolTip" description="SlideShow Play Button Tooltip"><![CDATA[]]></label>  
+          <label id="slideShowPrevButtonToolTip" description="SlideShow Prev Button Tooltip"><![CDATA[]]></label>  
+          <label id="slideShowNextButtonToolTip" description="SlideShow Next Button Tooltip"><![CDATA[]]></label>  
+          <label id="slideShowStopButtonToolTip" description="SlideShow Stop Button Tooltip"><![CDATA[]]></label>  
+          <label id="slideShowReplayButtonToolTip" description="SlideShow Replay Button Tooltip"><![CDATA[]]></label>  
+          <label id="slideShowRepeatButtonOnToolTip" description="SlideShow Repeat Button On Tooltip"><![CDATA[]]></label>  
+          <label id="slideShowRepeatButtonOffToolTip" description="SlideShow Repeat Button Off Tooltip"><![CDATA[]]></label>  
+          <label id="slideShowControlBarStatusLabelStart" description="SlideShow ControlBar Status Label at Start"><![CDATA[]]></label>  
+          <label id="slideShowControlBarStatusLabelProgress" description="SlideShow ControlBar Status Label at Progress"><![CDATA[]]></label>  
+          <label id="slideShowControlBarStatusLabelNoitems" description="SlideShow ControlBar Status Label when No Items Selected"><![CDATA[]]></label>  
+          <label id="slideShowDescriptionBarLabelStart" description="SlideShow DescriptionBar Label at Start"><![CDATA[]]></label> 
+        </labels> 
+      </labelGroup>  
+      <labelGroup id="ControlBar" name="ControlBar"> 
+        <labels> 
+          <label id="firstPageButtonToolTip" description="First Page Button Tooltip"><![CDATA[]]></label>  
+          <label id="previousPageButtonToolTip" description="Previous Page Button Tooltip"><![CDATA[Previous Lesson]]></label>  
+          <label id="indexButtonToolTip" description="Index Button Tooltip"><![CDATA[Find Your Lesson]]></label>  
+          <label id="bookmarksButtonToolTip" description="Bookmarks Button Tooltip"><![CDATA[]]></label>  
+          <label id="browsePDFButtonToolTip" description="Browse PDF Button Tooltip"><![CDATA[Browse PDF]]></label>  
+          <label id="pageNumberIndicatorToolTip" description="Page Number Indicator Tooltip"><![CDATA[Page number]]></label>  
+          <label id="printButtonToolTip" description="Print Button Tooltip"><![CDATA[]]></label>  
+          <label id="shareThisButtonToolTip" description="Share This! Button Tooltip"><![CDATA[]]></label>  
+          <label id="helpButtonToolTip" description="Help Button Tooltip"><![CDATA[]]></label>  
+          <label id="goToPageNButtonToolTip" description="Go To Page N Button Tooltip"><![CDATA[Go To Page]]></label>  
+          <label id="searchButtonToolTip" description="Search Button Tooltip"><![CDATA[]]></label>  
+          <label id="nextPageButtonToolTip" description="Next Page Button Tooltip"><![CDATA[Next Page]]></label>  
+          <label id="lastPageButtonToolTip" description="Last Page Button Tooltip"><![CDATA[Last Page]]></label> 
+        </labels> 
+      </labelGroup>  
+      <labelGroup id="ShareThis" name="ShareThis"> 
+        <labels> 
+          <label id="shareThisWindowTitle" description="Share This! window title"><![CDATA[]]></label>  
+          <label id="bookmarksTabTitle" description="Bookmarks Tab Title"><![CDATA[]]></label>  
+          <label id="sharePublicationOnLabel" description="Share Publication On Label"><![CDATA[]]></label>  
+          <label id="emailTabTitle" description="Email Tab Title"><![CDATA[]]></label>  
+          <label id="emailLabel" description="Email Label"><![CDATA[]]></label>  
+          <label id="yourNameLabel" description="Your Name Label"><![CDATA[]]></label>  
+          <label id="yourEmailLabel" description="Your Email Label"><![CDATA[]]></label>  
+          <label id="friendsNameLabel" description="Friends Name Label"><![CDATA[]]></label>  
+          <label id="friendsEmailLabel" description="Friends Email Label"><![CDATA[]]></label>  
+          <label id="messageLabel" description="Message Label"><![CDATA[]]></label>  
+          <label id="sendButtonLabel" description="Send Button Label"><![CDATA[]]></label>  
+          <label id="requiredFieldsLabel" description="Required Fields Label"><![CDATA[]]></label>  
+          <label id="sendingRequestLabel" description="Sending Request Label"><![CDATA[]]></label>  
+          <label id="emailSentLabel" description="Email Sent Label"><![CDATA[]]></label>  
+          <label id="emailSentFailedLabel" description="Email Sent Failed Label"><![CDATA[]]></label>  
+          <label id="sharedPublicationTitle" description="Shared Publication Title"><![CDATA[]]></label>  
+          <label id="sharedPublicationDescription" description="Shared Publication Description"><![CDATA[]]></label>  
+          <label id="sharePublicationEmailSubject" description="Share Publication Email Subject"><![CDATA[]]></label>  
+          <label id="embedTabTitle" description="Embed Tab Title"><![CDATA[]]></label>  
+          <label id="embedTabHeadline" description="Embed Tab Head line"><![CDATA[]]></label>  
+          <label id="embedTabInfoText" description="Embed Tab Info text"><![CDATA[]]></label>  
+          <label id="embedTabPreviewModeMessage" description="Embed Tab preview mode message"><![CDATA[]]></label>  
+          <label id="embedTabCopyToClipboardButtonLabel" description="Embed Tab copy to clipboard buttons' label"><![CDATA[]]></label>  
+          <label id="embedTabThumbnailCodeInfoText" description="Embed Tab thumbnail code info text"><![CDATA[]]></label>  
+          <label id="embedTabEmbedCodeInfoText" description="Embed Tab embed code info text"><![CDATA[]]></label>  
+          <label id="embedTabEmbedCodeWidthLabel" description="Embed Tab embed code width label"><![CDATA[]]></label>  
+          <label id="embedTabEmbedCodeHeightLabel" description="Embed Tab embed code height label"><![CDATA[]]></label>  
+          <label id="embedTabEmbedCodeEmbeddingTypeCheckBoxLabel" description="Embed Tab embedding type checkbox label"><![CDATA[]]></label> 
+        </labels> 
+      </labelGroup>  
+      <labelGroup id="AccessProtection_Plugin" name="AccessProtection Plugin"> 
+        <labels> 
+          <label id="accessProtectionWindowTitle" description="AccessProtection window title"><![CDATA[Access Protection]]></label>  
+          <label id="accessProtectionCredentialsFormLogin" description="AccessProtection login label"><![CDATA[login:]]></label>  
+          <label id="accessProtectionCredentialsFormPassword" description="AccessProtection password label"><![CDATA[password:]]></label>  
+          <label id="accessProtectionCredentialsFormSubmit" description="AccessProtection submit button label"><![CDATA[Submit]]></label>  
+          <label id="accessProtectionNoLogin" description="AccessProtection no login input status message"><![CDATA[Please enter login name]]></label>  
+          <label id="accessProtectionNoPassword" description="AccessProtection no password input status message"><![CDATA[Please enter password]]></label>  
+          <label id="accessProtectionCredentialCheckPleaseWait" description="AccessProtection credentials check progress status message"><![CDATA[Please wait...]]></label>  
+          <label id="accessProtectionCredentialCheckFailed" description="AccessProtection credentials check failed status message"><![CDATA[Login or password are incorrect, please try once again]]></label> 
+        </labels> 
+      </labelGroup>  
+      <labelGroup id="Share_Mode" name="Share Mode"> 
+        <labels> 
+          <label id="lblShareModeClickToReadButton" description="Share Mode Click to read button"><![CDATA[Click to read]]></label> 
+        </labels> 
+      </labelGroup> 
+    </labelGroups> 
+  </language> 
+</eMag>
