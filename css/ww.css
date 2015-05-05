@@ -522,6 +522,7 @@ ul {
 
 #content-container {
 	height: calc(100% - 3rem);
+	overflow: hidden;
 	}
 
 #content-iframe {
