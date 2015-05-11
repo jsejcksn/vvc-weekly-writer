@@ -561,7 +561,6 @@ ul {
 	}
 
 #content-iframe {
-	/*height: calc(100% - 3rem);*/
 	height: 100%;
 	width: 100%;
 	}
