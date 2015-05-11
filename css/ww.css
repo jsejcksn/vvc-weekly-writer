@@ -476,16 +476,16 @@ h1, h2, h3 {
 	margin: 1em auto;
 	}
 
-header {
-	height: 3rem;
-	}
-
 hr {
 	border-bottom: 1px solid rgba(0, 0, 0, .5);
 	}
 
 li {
 	margin: .5em 0;
+	}
+
+nav {
+	background-color: #37ca72;
 	}
 
 ol {
@@ -505,19 +505,24 @@ ul {
 
 /* -- Classes -- */
 
-
+.hide {
+	display: none;
+	}
 
 
 /* -- IDs -- */
 
 #btn-grade, #btn-week {
-	height: 100%;
+	background-color: #37ca72;
+	color: #ffffff;
+	height: 3rem;
+	outline: 0;
 	padding-left: .5em;
 	padding-right: .5em;
 	}
 
 #btn-grade {
-	border-right: 1px solid rgb(0, 0, 0);
+	/*border-right: 1px solid rgb(0, 0, 0);*/
 	}
 
 #content-container {
@@ -529,6 +534,20 @@ ul {
 	/*height: calc(100% - 3rem);*/
 	height: 100%;
 	width: 100%;
+	}
+
+#nav-grade {
+	background-color: #ffffff;
+	}
+
+#ww-logo {
+	float: right;
+	height: 2rem;
+	margin: .5rem;
+	}
+
+#nav-week {
+	background-color: #ffffff;
 	}
 
 
