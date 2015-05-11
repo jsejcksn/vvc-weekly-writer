@@ -21,6 +21,17 @@ var btnGrade6 = document.getElementById('grade-6');
 var btnGrade7 = document.getElementById('grade-7');
 var btnGrade8 = document.getElementById('grade-8');
 
+var navWeek00 = document.getElementById('week-00');
+var navWeek0 = document.getElementById('week-0');
+var navWeek1 = document.getElementById('week-1');
+var navWeek2 = document.getElementById('week-2');
+var navWeek3 = document.getElementById('week-3');
+var navWeek4 = document.getElementById('week-4');
+var navWeek5 = document.getElementById('week-5');
+var navWeek6 = document.getElementById('week-6');
+var navWeek7 = document.getElementById('week-7');
+var navWeek8 = document.getElementById('week-8');
+
 var btnWeek001 = document.getElementById('week-0-01');
 var btnWeek002 = document.getElementById('week-0-02');
 var btnWeek003 = document.getElementById('week-0-03');
@@ -358,48 +369,133 @@ var btnWeek836 = document.getElementById('week-8-36');
 // Functions ----------
 
 function grade0() {
-	navWeek.innerHTML = '<button id="week-0-01" class="btn-week-0">1</button><button id="week-0-02" class="btn-week-0">2</button><button id="week-0-03" class="btn-week-0">3</button><button id="week-0-04" class="btn-week-0">4</button><button id="week-0-05" class="btn-week-0">5</button><button id="week-0-06" class="btn-week-0">6</button><button id="week-0-07" class="btn-week-0">7</button><button id="week-0-08" class="btn-week-0">8</button><button id="week-0-09" class="btn-week-0">9</button><button id="week-0-10" class="btn-week-0">10</button><button id="week-0-11" class="btn-week-0">11</button><button id="week-0-12" class="btn-week-0">12</button><button id="week-0-13" class="btn-week-0">13</button><button id="week-0-14" class="btn-week-0">14</button><button id="week-0-15" class="btn-week-0">15</button><button id="week-0-16" class="btn-week-0">16</button><button id="week-0-17" class="btn-week-0">17</button><button id="week-0-18" class="btn-week-0">18</button><button id="week-0-19" class="btn-week-0">19</button><button id="week-0-20" class="btn-week-0">20</button><button id="week-0-21" class="btn-week-0">21</button><button id="week-0-22" class="btn-week-0">22</button><button id="week-0-23" class="btn-week-0">23</button><button id="week-0-24" class="btn-week-0">24</button><button id="week-0-25" class="btn-week-0">25</button><button id="week-0-26" class="btn-week-0">26</button><button id="week-0-27" class="btn-week-0">27</button><button id="week-0-28" class="btn-week-0">28</button><button id="week-0-29" class="btn-week-0">29</button><button id="week-0-30" class="btn-week-0">30</button><button id="week-0-31" class="btn-week-0">31</button><button id="week-0-32" class="btn-week-0">32</button><button id="week-0-33" class="btn-week-0">33</button><button id="week-0-34" class="btn-week-0">34</button><button id="week-0-35" class="btn-week-0">35</button><button id="week-0-36" class="btn-week-0">36</button>';
+	hideMsg();
+	navWeek0.setAttribute('class', '');
+	navWeek1.setAttribute('class', 'hide');
+	navWeek2.setAttribute('class', 'hide');
+	navWeek3.setAttribute('class', 'hide');
+	navWeek4.setAttribute('class', 'hide');
+	navWeek5.setAttribute('class', 'hide');
+	navWeek6.setAttribute('class', 'hide');
+	navWeek7.setAttribute('class', 'hide');
+	navWeek8.setAttribute('class', 'hide');
 	menuWeek();
 	}
 
 function grade1() {
-	navWeek.innerHTML = '<button id="week-1-01" class="btn-week-1">1</button><button id="week-1-02" class="btn-week-1">2</button><button id="week-1-03" class="btn-week-1">3</button><button id="week-1-04" class="btn-week-1">4</button><button id="week-1-05" class="btn-week-1">5</button><button id="week-1-06" class="btn-week-1">6</button><button id="week-1-07" class="btn-week-1">7</button><button id="week-1-08" class="btn-week-1">8</button><button id="week-1-09" class="btn-week-1">9</button><button id="week-1-10" class="btn-week-1">10</button><button id="week-1-11" class="btn-week-1">11</button><button id="week-1-12" class="btn-week-1">12</button><button id="week-1-13" class="btn-week-1">13</button><button id="week-1-14" class="btn-week-1">14</button><button id="week-1-15" class="btn-week-1">15</button><button id="week-1-16" class="btn-week-1">16</button><button id="week-1-17" class="btn-week-1">17</button><button id="week-1-18" class="btn-week-1">18</button><button id="week-1-19" class="btn-week-1">19</button><button id="week-1-20" class="btn-week-1">20</button><button id="week-1-21" class="btn-week-1">21</button><button id="week-1-22" class="btn-week-1">22</button><button id="week-1-23" class="btn-week-1">23</button><button id="week-1-24" class="btn-week-1">24</button><button id="week-1-25" class="btn-week-1">25</button><button id="week-1-26" class="btn-week-1">26</button><button id="week-1-27" class="btn-week-1">27</button><button id="week-1-28" class="btn-week-1">28</button><button id="week-1-29" class="btn-week-1">29</button><button id="week-1-30" class="btn-week-1">30</button><button id="week-1-31" class="btn-week-1">31</button><button id="week-1-32" class="btn-week-1">32</button><button id="week-1-33" class="btn-week-1">33</button><button id="week-1-34" class="btn-week-1">34</button><button id="week-1-35" class="btn-week-1">35</button><button id="week-1-36" class="btn-week-1">36</button>';
+	hideMsg();
+	navWeek0.setAttribute('class', 'hide');
+	navWeek1.setAttribute('class', '');
+	navWeek2.setAttribute('class', 'hide');
+	navWeek3.setAttribute('class', 'hide');
+	navWeek4.setAttribute('class', 'hide');
+	navWeek5.setAttribute('class', 'hide');
+	navWeek6.setAttribute('class', 'hide');
+	navWeek7.setAttribute('class', 'hide');
+	navWeek8.setAttribute('class', 'hide');
 	menuWeek();
 	}
 
 function grade2() {
-	navWeek.innerHTML = '<button id="week-2-01" class="btn-week-2">1</button><button id="week-2-02" class="btn-week-2">2</button><button id="week-2-03" class="btn-week-2">3</button><button id="week-2-04" class="btn-week-2">4</button><button id="week-2-05" class="btn-week-2">5</button><button id="week-2-06" class="btn-week-2">6</button><button id="week-2-07" class="btn-week-2">7</button><button id="week-2-08" class="btn-week-2">8</button><button id="week-2-09" class="btn-week-2">9</button><button id="week-2-10" class="btn-week-2">10</button><button id="week-2-11" class="btn-week-2">11</button><button id="week-2-12" class="btn-week-2">12</button><button id="week-2-13" class="btn-week-2">13</button><button id="week-2-14" class="btn-week-2">14</button><button id="week-2-15" class="btn-week-2">15</button><button id="week-2-16" class="btn-week-2">16</button><button id="week-2-17" class="btn-week-2">17</button><button id="week-2-18" class="btn-week-2">18</button><button id="week-2-19" class="btn-week-2">19</button><button id="week-2-20" class="btn-week-2">20</button><button id="week-2-21" class="btn-week-2">21</button><button id="week-2-22" class="btn-week-2">22</button><button id="week-2-23" class="btn-week-2">23</button><button id="week-2-24" class="btn-week-2">24</button><button id="week-2-25" class="btn-week-2">25</button><button id="week-2-26" class="btn-week-2">26</button><button id="week-2-27" class="btn-week-2">27</button><button id="week-2-28" class="btn-week-2">28</button><button id="week-2-29" class="btn-week-2">29</button><button id="week-2-30" class="btn-week-2">30</button><button id="week-2-31" class="btn-week-2">31</button><button id="week-2-32" class="btn-week-2">32</button><button id="week-2-33" class="btn-week-2">33</button><button id="week-2-34" class="btn-week-2">34</button><button id="week-2-35" class="btn-week-2">35</button><button id="week-2-36" class="btn-week-2">36</button>';
+	hideMsg();
+	navWeek0.setAttribute('class', 'hide');
+	navWeek1.setAttribute('class', 'hide');
+	navWeek2.setAttribute('class', '');
+	navWeek3.setAttribute('class', 'hide');
+	navWeek4.setAttribute('class', 'hide');
+	navWeek5.setAttribute('class', 'hide');
+	navWeek6.setAttribute('class', 'hide');
+	navWeek7.setAttribute('class', 'hide');
+	navWeek8.setAttribute('class', 'hide');
 	menuWeek();
 	}
 
 function grade3() {
-	navWeek.innerHTML = '<button id="week-3-01" class="btn-week-3">1</button><button id="week-3-02" class="btn-week-3">2</button><button id="week-3-03" class="btn-week-3">3</button><button id="week-3-04" class="btn-week-3">4</button><button id="week-3-05" class="btn-week-3">5</button><button id="week-3-06" class="btn-week-3">6</button><button id="week-3-07" class="btn-week-3">7</button><button id="week-3-08" class="btn-week-3">8</button><button id="week-3-09" class="btn-week-3">9</button><button id="week-3-10" class="btn-week-3">10</button><button id="week-3-11" class="btn-week-3">11</button><button id="week-3-12" class="btn-week-3">12</button><button id="week-3-13" class="btn-week-3">13</button><button id="week-3-14" class="btn-week-3">14</button><button id="week-3-15" class="btn-week-3">15</button><button id="week-3-16" class="btn-week-3">16</button><button id="week-3-17" class="btn-week-3">17</button><button id="week-3-18" class="btn-week-3">18</button><button id="week-3-19" class="btn-week-3">19</button><button id="week-3-20" class="btn-week-3">20</button><button id="week-3-21" class="btn-week-3">21</button><button id="week-3-22" class="btn-week-3">22</button><button id="week-3-23" class="btn-week-3">23</button><button id="week-3-24" class="btn-week-3">24</button><button id="week-3-25" class="btn-week-3">25</button><button id="week-3-26" class="btn-week-3">26</button><button id="week-3-27" class="btn-week-3">27</button><button id="week-3-28" class="btn-week-3">28</button><button id="week-3-29" class="btn-week-3">29</button><button id="week-3-30" class="btn-week-3">30</button><button id="week-3-31" class="btn-week-3">31</button><button id="week-3-32" class="btn-week-3">32</button><button id="week-3-33" class="btn-week-3">33</button><button id="week-3-34" class="btn-week-3">34</button><button id="week-3-35" class="btn-week-3">35</button><button id="week-3-36" class="btn-week-3">36</button>';
+	hideMsg();
+	navWeek0.setAttribute('class', 'hide');
+	navWeek1.setAttribute('class', 'hide');
+	navWeek2.setAttribute('class', 'hide');
+	navWeek3.setAttribute('class', '');
+	navWeek4.setAttribute('class', 'hide');
+	navWeek5.setAttribute('class', 'hide');
+	navWeek6.setAttribute('class', 'hide');
+	navWeek7.setAttribute('class', 'hide');
+	navWeek8.setAttribute('class', 'hide');
 	menuWeek();
 	}
 
 function grade4() {
-	navWeek.innerHTML = '<button id="week-4-01" class="btn-week-4">1</button><button id="week-4-02" class="btn-week-4">2</button><button id="week-4-03" class="btn-week-4">3</button><button id="week-4-04" class="btn-week-4">4</button><button id="week-4-05" class="btn-week-4">5</button><button id="week-4-06" class="btn-week-4">6</button><button id="week-4-07" class="btn-week-4">7</button><button id="week-4-08" class="btn-week-4">8</button><button id="week-4-09" class="btn-week-4">9</button><button id="week-4-10" class="btn-week-4">10</button><button id="week-4-11" class="btn-week-4">11</button><button id="week-4-12" class="btn-week-4">12</button><button id="week-4-13" class="btn-week-4">13</button><button id="week-4-14" class="btn-week-4">14</button><button id="week-4-15" class="btn-week-4">15</button><button id="week-4-16" class="btn-week-4">16</button><button id="week-4-17" class="btn-week-4">17</button><button id="week-4-18" class="btn-week-4">18</button><button id="week-4-19" class="btn-week-4">19</button><button id="week-4-20" class="btn-week-4">20</button><button id="week-4-21" class="btn-week-4">21</button><button id="week-4-22" class="btn-week-4">22</button><button id="week-4-23" class="btn-week-4">23</button><button id="week-4-24" class="btn-week-4">24</button><button id="week-4-25" class="btn-week-4">25</button><button id="week-4-26" class="btn-week-4">26</button><button id="week-4-27" class="btn-week-4">27</button><button id="week-4-28" class="btn-week-4">28</button><button id="week-4-29" class="btn-week-4">29</button><button id="week-4-30" class="btn-week-4">30</button><button id="week-4-31" class="btn-week-4">31</button><button id="week-4-32" class="btn-week-4">32</button><button id="week-4-33" class="btn-week-4">33</button><button id="week-4-34" class="btn-week-4">34</button><button id="week-4-35" class="btn-week-4">35</button><button id="week-4-36" class="btn-week-4">36</button>';
+	hideMsg();
+	navWeek0.setAttribute('class', 'hide');
+	navWeek1.setAttribute('class', 'hide');
+	navWeek2.setAttribute('class', 'hide');
+	navWeek3.setAttribute('class', 'hide');
+	navWeek4.setAttribute('class', '');
+	navWeek5.setAttribute('class', 'hide');
+	navWeek6.setAttribute('class', 'hide');
+	navWeek7.setAttribute('class', 'hide');
+	navWeek8.setAttribute('class', 'hide');
 	menuWeek();
 	}
 
 function grade5() {
-	navWeek.innerHTML = '<button id="week-5-01" class="btn-week-5">1</button><button id="week-5-02" class="btn-week-5">2</button><button id="week-5-03" class="btn-week-5">3</button><button id="week-5-04" class="btn-week-5">4</button><button id="week-5-05" class="btn-week-5">5</button><button id="week-5-06" class="btn-week-5">6</button><button id="week-5-07" class="btn-week-5">7</button><button id="week-5-08" class="btn-week-5">8</button><button id="week-5-09" class="btn-week-5">9</button><button id="week-5-10" class="btn-week-5">10</button><button id="week-5-11" class="btn-week-5">11</button><button id="week-5-12" class="btn-week-5">12</button><button id="week-5-13" class="btn-week-5">13</button><button id="week-5-14" class="btn-week-5">14</button><button id="week-5-15" class="btn-week-5">15</button><button id="week-5-16" class="btn-week-5">16</button><button id="week-5-17" class="btn-week-5">17</button><button id="week-5-18" class="btn-week-5">18</button><button id="week-5-19" class="btn-week-5">19</button><button id="week-5-20" class="btn-week-5">20</button><button id="week-5-21" class="btn-week-5">21</button><button id="week-5-22" class="btn-week-5">22</button><button id="week-5-23" class="btn-week-5">23</button><button id="week-5-24" class="btn-week-5">24</button><button id="week-5-25" class="btn-week-5">25</button><button id="week-5-26" class="btn-week-5">26</button><button id="week-5-27" class="btn-week-5">27</button><button id="week-5-28" class="btn-week-5">28</button><button id="week-5-29" class="btn-week-5">29</button><button id="week-5-30" class="btn-week-5">30</button><button id="week-5-31" class="btn-week-5">31</button><button id="week-5-32" class="btn-week-5">32</button><button id="week-5-33" class="btn-week-5">33</button><button id="week-5-34" class="btn-week-5">34</button><button id="week-5-35" class="btn-week-5">35</button><button id="week-5-36" class="btn-week-5">36</button>';
+	hideMsg();
+	navWeek0.setAttribute('class', 'hide');
+	navWeek1.setAttribute('class', 'hide');
+	navWeek2.setAttribute('class', 'hide');
+	navWeek3.setAttribute('class', 'hide');
+	navWeek4.setAttribute('class', 'hide');
+	navWeek5.setAttribute('class', '');
+	navWeek6.setAttribute('class', 'hide');
+	navWeek7.setAttribute('class', 'hide');
+	navWeek8.setAttribute('class', 'hide');
 	menuWeek();
 	}
 
 function grade6() {
-	navWeek.innerHTML = '<button id="week-6-01" class="btn-week-6">1</button><button id="week-6-02" class="btn-week-6">2</button><button id="week-6-03" class="btn-week-6">3</button><button id="week-6-04" class="btn-week-6">4</button><button id="week-6-05" class="btn-week-6">5</button><button id="week-6-06" class="btn-week-6">6</button><button id="week-6-07" class="btn-week-6">7</button><button id="week-6-08" class="btn-week-6">8</button><button id="week-6-09" class="btn-week-6">9</button><button id="week-6-10" class="btn-week-6">10</button><button id="week-6-11" class="btn-week-6">11</button><button id="week-6-12" class="btn-week-6">12</button><button id="week-6-13" class="btn-week-6">13</button><button id="week-6-14" class="btn-week-6">14</button><button id="week-6-15" class="btn-week-6">15</button><button id="week-6-16" class="btn-week-6">16</button><button id="week-6-17" class="btn-week-6">17</button><button id="week-6-18" class="btn-week-6">18</button><button id="week-6-19" class="btn-week-6">19</button><button id="week-6-20" class="btn-week-6">20</button><button id="week-6-21" class="btn-week-6">21</button><button id="week-6-22" class="btn-week-6">22</button><button id="week-6-23" class="btn-week-6">23</button><button id="week-6-24" class="btn-week-6">24</button><button id="week-6-25" class="btn-week-6">25</button><button id="week-6-26" class="btn-week-6">26</button><button id="week-6-27" class="btn-week-6">27</button><button id="week-6-28" class="btn-week-6">28</button><button id="week-6-29" class="btn-week-6">29</button><button id="week-6-30" class="btn-week-6">30</button><button id="week-6-31" class="btn-week-6">31</button><button id="week-6-32" class="btn-week-6">32</button><button id="week-6-33" class="btn-week-6">33</button><button id="week-6-34" class="btn-week-6">34</button><button id="week-6-35" class="btn-week-6">35</button><button id="week-6-36" class="btn-week-6">36</button>';
+	hideMsg();
+	navWeek0.setAttribute('class', 'hide');
+	navWeek1.setAttribute('class', 'hide');
+	navWeek2.setAttribute('class', 'hide');
+	navWeek3.setAttribute('class', 'hide');
+	navWeek4.setAttribute('class', 'hide');
+	navWeek5.setAttribute('class', 'hide');
+	navWeek6.setAttribute('class', '');
+	navWeek7.setAttribute('class', 'hide');
+	navWeek8.setAttribute('class', 'hide');
 	menuWeek();
 	}
 
 function grade7() {
-	navWeek.innerHTML = '<button id="week-7-01" class="btn-week-7">1</button><button id="week-7-02" class="btn-week-7">2</button><button id="week-7-03" class="btn-week-7">3</button><button id="week-7-04" class="btn-week-7">4</button><button id="week-7-05" class="btn-week-7">5</button><button id="week-7-06" class="btn-week-7">6</button><button id="week-7-07" class="btn-week-7">7</button><button id="week-7-08" class="btn-week-7">8</button><button id="week-7-09" class="btn-week-7">9</button><button id="week-7-10" class="btn-week-7">10</button><button id="week-7-11" class="btn-week-7">11</button><button id="week-7-12" class="btn-week-7">12</button><button id="week-7-13" class="btn-week-7">13</button><button id="week-7-14" class="btn-week-7">14</button><button id="week-7-15" class="btn-week-7">15</button><button id="week-7-16" class="btn-week-7">16</button><button id="week-7-17" class="btn-week-7">17</button><button id="week-7-18" class="btn-week-7">18</button><button id="week-7-19" class="btn-week-7">19</button><button id="week-7-20" class="btn-week-7">20</button><button id="week-7-21" class="btn-week-7">21</button><button id="week-7-22" class="btn-week-7">22</button><button id="week-7-23" class="btn-week-7">23</button><button id="week-7-24" class="btn-week-7">24</button><button id="week-7-25" class="btn-week-7">25</button><button id="week-7-26" class="btn-week-7">26</button><button id="week-7-27" class="btn-week-7">27</button><button id="week-7-28" class="btn-week-7">28</button><button id="week-7-29" class="btn-week-7">29</button><button id="week-7-30" class="btn-week-7">30</button><button id="week-7-31" class="btn-week-7">31</button><button id="week-7-32" class="btn-week-7">32</button><button id="week-7-33" class="btn-week-7">33</button><button id="week-7-34" class="btn-week-7">34</button><button id="week-7-35" class="btn-week-7">35</button><button id="week-7-36" class="btn-week-7">36</button>';
+	hideMsg();
+	navWeek0.setAttribute('class', 'hide');
+	navWeek1.setAttribute('class', 'hide');
+	navWeek2.setAttribute('class', 'hide');
+	navWeek3.setAttribute('class', 'hide');
+	navWeek4.setAttribute('class', 'hide');
+	navWeek5.setAttribute('class', 'hide');
+	navWeek6.setAttribute('class', 'hide');
+	navWeek7.setAttribute('class', '');
+	navWeek8.setAttribute('class', 'hide');
 	menuWeek();
 	}
 
 function grade8() {
-	navWeek.innerHTML = '<button id="week-8-01" class="btn-week-8">1</button><button id="week-8-02" class="btn-week-8">2</button><button id="week-8-03" class="btn-week-8">3</button><button id="week-8-04" class="btn-week-8">4</button><button id="week-8-05" class="btn-week-8">5</button><button id="week-8-06" class="btn-week-8">6</button><button id="week-8-07" class="btn-week-8">7</button><button id="week-8-08" class="btn-week-8">8</button><button id="week-8-09" class="btn-week-8">9</button><button id="week-8-10" class="btn-week-8">10</button><button id="week-8-11" class="btn-week-8">11</button><button id="week-8-12" class="btn-week-8">12</button><button id="week-8-13" class="btn-week-8">13</button><button id="week-8-14" class="btn-week-8">14</button><button id="week-8-15" class="btn-week-8">15</button><button id="week-8-16" class="btn-week-8">16</button><button id="week-8-17" class="btn-week-8">17</button><button id="week-8-18" class="btn-week-8">18</button><button id="week-8-19" class="btn-week-8">19</button><button id="week-8-20" class="btn-week-8">20</button><button id="week-8-21" class="btn-week-8">21</button><button id="week-8-22" class="btn-week-8">22</button><button id="week-8-23" class="btn-week-8">23</button><button id="week-8-24" class="btn-week-8">24</button><button id="week-8-25" class="btn-week-8">25</button><button id="week-8-26" class="btn-week-8">26</button><button id="week-8-27" class="btn-week-8">27</button><button id="week-8-28" class="btn-week-8">28</button><button id="week-8-29" class="btn-week-8">29</button><button id="week-8-30" class="btn-week-8">30</button><button id="week-8-31" class="btn-week-8">31</button><button id="week-8-32" class="btn-week-8">32</button><button id="week-8-33" class="btn-week-8">33</button><button id="week-8-34" class="btn-week-8">34</button><button id="week-8-35" class="btn-week-8">35</button><button id="week-8-36" class="btn-week-8">36</button>';
+	hideMsg();
+	navWeek0.setAttribute('class', 'hide');
+	navWeek1.setAttribute('class', 'hide');
+	navWeek2.setAttribute('class', 'hide');
+	navWeek3.setAttribute('class', 'hide');
+	navWeek4.setAttribute('class', 'hide');
+	navWeek5.setAttribute('class', 'hide');
+	navWeek6.setAttribute('class', 'hide');
+	navWeek7.setAttribute('class', 'hide');
+	navWeek8.setAttribute('class', '');
 	menuWeek();
+	}
+
+function hideMsg() {
+	navWeek00.setAttribute('class', 'hide');
 	}
 
 function menuGrade() {
@@ -439,6 +535,7 @@ function menuWeek() {
 
 btnGrade.addEventListener('click', menuGrade);
 btnWeek.addEventListener('click', menuWeek);
+
 btnGrade0.addEventListener('click', grade0);
 btnGrade1.addEventListener('click', grade1);
 btnGrade2.addEventListener('click', grade2);
@@ -448,6 +545,331 @@ btnGrade5.addEventListener('click', grade5);
 btnGrade6.addEventListener('click', grade6);
 btnGrade7.addEventListener('click', grade7);
 btnGrade8.addEventListener('click', grade8);
+
+btnWeek001.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek002.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek003.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek004.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek005.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek006.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek007.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek008.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek009.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek010.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek011.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek012.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek013.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek014.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek015.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek016.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek017.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek018.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek019.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek020.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek021.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek022.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek023.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek024.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek025.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek026.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek027.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek028.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek029.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek030.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek031.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek032.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek033.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek034.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek035.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek036.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek101.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek102.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek103.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek104.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek105.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek106.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek107.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek108.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek109.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek110.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek111.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek112.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek113.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek114.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek115.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek116.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek117.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek118.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek119.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek120.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek121.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek122.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek123.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek124.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek125.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek126.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek127.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek128.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek129.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek130.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek131.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek132.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek133.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek134.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek135.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek136.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek201.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek202.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek203.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek204.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek205.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek206.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek207.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek208.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek209.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek210.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek211.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek212.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek213.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek214.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek215.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek216.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek217.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek218.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek219.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek220.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek221.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek222.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek223.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek224.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek225.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek226.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek227.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek228.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek229.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek230.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek231.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek232.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek233.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek234.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek235.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek236.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek301.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek302.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek303.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek304.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek305.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek306.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek307.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek308.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek309.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek310.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek311.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek312.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek313.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek314.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek315.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek316.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek317.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek318.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek319.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek320.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek321.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek322.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek323.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek324.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek325.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek326.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek327.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek328.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek329.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek330.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek331.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek332.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek333.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek334.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek335.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek336.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek401.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek402.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek403.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek404.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek405.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek406.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek407.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek408.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek409.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek410.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek411.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek412.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek413.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek414.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek415.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek416.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek417.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek418.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek419.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek420.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek421.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek422.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek423.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek424.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek425.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek426.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek427.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek428.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek429.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek430.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek431.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek432.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek433.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek434.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek435.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek436.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek501.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek502.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek503.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek504.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek505.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek506.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek507.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek508.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek509.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek510.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek511.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek512.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek513.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek514.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek515.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek516.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek517.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek518.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek519.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek520.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek521.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek522.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek523.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek524.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek525.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek526.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek527.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek528.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek529.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek530.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek531.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek532.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek533.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek534.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek535.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek536.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek601.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek602.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek603.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek604.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek605.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek606.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek607.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek608.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek609.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek610.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek611.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek612.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek613.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek614.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek615.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek616.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek617.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek618.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek619.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek620.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek621.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek622.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek623.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek624.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek625.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek626.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek627.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek628.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek629.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek630.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek631.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek632.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek633.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek634.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek635.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek636.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek701.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek702.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek703.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek704.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek705.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek706.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek707.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek708.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek709.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek710.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek711.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek712.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek713.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek714.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek715.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek716.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek717.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek718.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek719.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek720.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek721.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek722.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek723.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek724.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek725.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek726.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek727.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek728.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek729.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek730.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek731.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek732.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek733.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek734.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek735.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek736.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek801.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek802.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek803.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek804.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek805.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek806.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek807.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek808.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek809.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek810.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek811.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek812.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek813.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek814.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek815.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek816.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek817.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek818.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek819.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek820.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek821.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek822.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek823.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek824.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek825.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek826.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek827.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek828.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek829.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek830.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek831.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek832.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek833.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek834.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek835.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
+btnWeek836.addEventListener('click', function() {content.src = './pubs/0-01/index.html'; menuWeek();})
 
 
 // Execute ----------
