@@ -505,6 +505,40 @@ ul {
 
 /* -- Classes -- */
 
+.active {
+	background-color: rgba(255, 255, 255, 1) !important;
+	color: #37ca72 !important;
+	}
+
+.btn-grade {
+	background-color: #37ca72;
+	color: #ffffff;
+	height: 4rem;
+	margin: 2rem;
+	outline: 0;
+	width: 4rem;
+	}
+
+.btn-week-0, .btn-week-1, .btn-week-2, .btn-week-3, .btn-week-4, .btn-week-5, .btn-week-6, .btn-week-7, .btn-week-8 {
+	color: #ffffff;
+	height: 4rem;
+	margin: 2rem;
+	outline: 0;
+	width: 4rem;
+	}
+
+.btn-week-0, .btn-week-1, .btn-week-2 {
+	background-color: #37ca72;
+	}
+
+.btn-week-3, .btn-week-4, .btn-week-5 {
+	background-color: #e54d42;
+	}
+
+.btn-week-6, .btn-week-7, .btn-week-8 {
+	background-color: #3a98d8;
+	}
+
 .hide {
 	display: none;
 	}
@@ -513,16 +547,12 @@ ul {
 /* -- IDs -- */
 
 #btn-grade, #btn-week {
-	background-color: #37ca72;
+	background-color: rgba(255, 255, 255, 0);
 	color: #ffffff;
 	height: 3rem;
 	outline: 0;
 	padding-left: .5em;
 	padding-right: .5em;
-	}
-
-#btn-grade {
-	/*border-right: 1px solid rgb(0, 0, 0);*/
 	}
 
 #content-container {
@@ -536,8 +566,12 @@ ul {
 	width: 100%;
 	}
 
-#nav-grade {
+#nav-grade, #nav-week {
 	background-color: #ffffff;
+	}
+
+#nav-grade {
+	padding: 1rem;
 	}
 
 #ww-logo {
@@ -547,7 +581,12 @@ ul {
 	}
 
 #nav-week {
-	background-color: #ffffff;
+	padding: 1rem;
+	}
+
+#nav-week > p {
+	margin: 0;
+	padding: 2rem;
 	}
 
 
