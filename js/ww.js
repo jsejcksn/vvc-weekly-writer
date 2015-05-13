@@ -2,14 +2,15 @@
 
 // Variables ----------
 
+var baseUrl = '';
 var btnGrade = document.getElementById('btn-grade');
 var btnPrint = document.getElementById('btn-print');
 var btnWeek = document.getElementById('btn-week');
 var content = document.getElementById('content-iframe');
+var docString = '';
 var gradeVisible = false;
 var navGrade = document.getElementById('nav-grade');
 var navWeek = document.getElementById('nav-week');
-var weekUrl = '';
 var weekVisible = false;
 
 
@@ -500,6 +501,12 @@ function hideMsg() {
 	navWeek00.setAttribute('class', 'hide');
 	}
 
+function loadWeek() {
+	content.src = baseUrl + docString;
+	menuWeek();
+	showPrintBtn();
+	}
+
 function menuGrade() {
 	if (gradeVisible == false) {
 		btnGrade.setAttribute('class', 'active');
@@ -533,7 +540,11 @@ function menuWeek() {
 	}
 
 function printPub() {
-	content.src = weekUrl + 'print.pdf';
+	content.src = baseUrl + 'print.pdf';
+	}
+
+function showPrintBtn() {
+	btnPrint.setAttribute('class', '');
 	}
 
 
@@ -553,338 +564,1310 @@ btnGrade6.addEventListener('click', grade6);
 btnGrade7.addEventListener('click', grade7);
 btnGrade8.addEventListener('click', grade8);
 
-btnWeek001.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek002.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek003.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek004.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek005.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek006.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek007.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek008.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek009.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek010.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek011.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek012.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek013.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek014.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek015.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek016.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek017.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek018.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek019.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek020.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek021.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek022.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek023.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek024.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek025.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek026.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek027.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek028.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek029.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek030.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek031.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek032.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek033.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek034.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek035.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek036.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
+btnWeek001.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek002.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek003.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek004.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek005.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek006.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek007.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek008.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek009.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek010.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek011.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek012.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek013.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek014.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek015.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek016.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek017.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek018.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek019.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek020.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek021.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek022.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek023.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek024.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek025.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek026.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek027.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek028.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek029.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek030.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek031.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek032.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek033.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek034.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek035.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek036.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
 
-btnWeek101.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek102.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek103.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek104.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek105.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek106.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek107.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek108.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek109.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek110.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek111.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek112.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek113.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek114.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek115.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek116.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek117.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek118.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek119.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek120.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek121.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek122.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek123.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek124.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek125.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek126.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek127.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek128.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek129.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek130.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek131.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek132.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek133.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek134.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek135.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek136.addEventListener('click', function() {weekUrl = './pubs/0-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
+btnWeek101.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek102.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek103.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek104.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek105.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek106.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek107.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek108.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek109.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek110.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek111.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek112.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek113.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek114.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek115.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek116.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek117.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek118.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek119.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek120.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek121.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek122.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek123.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek124.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek125.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek126.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek127.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek128.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek129.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek130.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek131.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek132.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek133.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek134.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek135.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek136.addEventListener('click', function() {
+	baseUrl = './pubs/0-01/';
+	docString = 'index.html';
+	loadWeek();})
 
-btnWeek201.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek202.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek203.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek204.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek205.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek206.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek207.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek208.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek209.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek210.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek211.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek212.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek213.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek214.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek215.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek216.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek217.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek218.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek219.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek220.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek221.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek222.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek223.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek224.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek225.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek226.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek227.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek228.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek229.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek230.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek231.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek232.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek233.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek234.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek235.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek236.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
+btnWeek201.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek202.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek203.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek204.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek205.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek206.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek207.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek208.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek209.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek210.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek211.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek212.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek213.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek214.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek215.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek216.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek217.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek218.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek219.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek220.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek221.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek222.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek223.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek224.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek225.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek226.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek227.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek228.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek229.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek230.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek231.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek232.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek233.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek234.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek235.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek236.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
 
-btnWeek301.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek302.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek303.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek304.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek305.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek306.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek307.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek308.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek309.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek310.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek311.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek312.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek313.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek314.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek315.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek316.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek317.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek318.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek319.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek320.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek321.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek322.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek323.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek324.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek325.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek326.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek327.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek328.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek329.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek330.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek331.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek332.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek333.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek334.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek335.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek336.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
+btnWeek301.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek302.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek303.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek304.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek305.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek306.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek307.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek308.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek309.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek310.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek311.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek312.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek313.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek314.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek315.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek316.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek317.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek318.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek319.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek320.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek321.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek322.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek323.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek324.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek325.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek326.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek327.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek328.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek329.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek330.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek331.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek332.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek333.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek334.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek335.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek336.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
 
-btnWeek401.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek402.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek403.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek404.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek405.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek406.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek407.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek408.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek409.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek410.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek411.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek412.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek413.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek414.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek415.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek416.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek417.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek418.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek419.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek420.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek421.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek422.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek423.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek424.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek425.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek426.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek427.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek428.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek429.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek430.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek431.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek432.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek433.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek434.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek435.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek436.addEventListener('click', function() {weekUrl = './pubs/2-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
+btnWeek401.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek402.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek403.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek404.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek405.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek406.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek407.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek408.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek409.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek410.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek411.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek412.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek413.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek414.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek415.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek416.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek417.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek418.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek419.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek420.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek421.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek422.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek423.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek424.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek425.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek426.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek427.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek428.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek429.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek430.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek431.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek432.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek433.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek434.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek435.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek436.addEventListener('click', function() {
+	baseUrl = './pubs/2-01/';
+	docString = 'index.html';
+	loadWeek();})
 
-btnWeek501.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek502.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek503.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek504.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek505.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek506.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek507.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek508.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek509.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek510.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek511.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek512.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek513.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek514.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek515.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek516.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek517.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek518.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek519.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek520.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek521.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek522.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek523.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek524.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek525.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek526.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek527.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek528.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek529.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek530.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek531.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek532.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek533.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek534.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek535.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek536.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
+btnWeek501.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek502.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek503.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek504.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek505.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek506.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek507.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek508.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek509.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek510.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek511.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek512.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek513.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek514.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek515.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek516.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek517.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek518.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek519.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek520.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek521.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek522.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek523.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek524.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek525.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek526.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek527.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek528.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek529.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek530.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek531.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek532.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek533.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek534.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek535.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek536.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
 
-btnWeek601.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek602.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek603.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek604.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek605.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek606.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek607.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek608.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek609.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek610.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek611.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek612.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek613.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek614.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek615.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek616.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek617.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek618.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek619.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek620.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek621.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek622.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek623.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek624.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek625.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek626.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek627.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek628.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek629.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek630.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek631.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek632.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek633.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek634.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek635.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek636.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
+btnWeek601.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek602.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek603.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek604.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek605.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek606.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek607.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek608.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek609.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek610.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek611.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek612.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek613.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek614.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek615.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek616.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek617.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek618.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek619.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek620.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek621.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek622.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek623.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek624.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek625.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek626.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek627.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek628.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek629.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek630.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek631.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek632.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek633.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek634.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek635.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek636.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
 
-btnWeek701.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek702.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek703.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek704.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek705.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek706.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek707.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek708.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek709.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek710.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek711.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek712.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek713.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek714.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek715.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek716.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek717.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek718.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek719.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek720.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek721.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek722.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek723.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek724.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek725.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek726.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek727.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek728.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek729.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek730.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek731.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek732.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek733.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek734.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek735.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek736.addEventListener('click', function() {weekUrl = './pubs/5-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
+btnWeek701.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek702.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek703.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek704.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek705.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek706.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek707.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek708.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek709.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek710.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek711.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek712.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek713.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek714.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek715.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek716.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek717.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek718.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek719.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek720.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek721.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek722.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek723.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek724.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek725.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek726.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek727.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek728.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek729.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek730.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek731.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek732.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek733.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek734.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek735.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek736.addEventListener('click', function() {
+	baseUrl = './pubs/5-01/';
+	docString = 'index.html';
+	loadWeek();})
 
-btnWeek801.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek802.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek803.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek804.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek805.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek806.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek807.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek808.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek809.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek810.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek811.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek812.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek813.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek814.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek815.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek816.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek817.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek818.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek819.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek820.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek821.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek822.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek823.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek824.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek825.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek826.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek827.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek828.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek829.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek830.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek831.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek832.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek833.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek834.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek835.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
-btnWeek836.addEventListener('click', function() {weekUrl = './pubs/8-01/'; content.src = weekUrl + 'index.html'; menuWeek();})
+btnWeek801.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek802.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek803.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek804.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek805.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek806.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek807.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek808.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek809.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek810.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek811.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek812.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek813.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek814.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek815.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek816.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek817.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek818.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek819.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek820.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek821.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek822.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek823.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek824.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek825.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek826.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek827.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek828.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek829.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek830.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek831.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek832.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek833.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek834.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek835.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
+btnWeek836.addEventListener('click', function() {
+	baseUrl = './pubs/8-01/';
+	docString = 'index.html';
+	loadWeek();})
 
 
 // Execute ----------
