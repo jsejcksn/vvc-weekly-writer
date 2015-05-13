@@ -546,6 +546,10 @@ ul {
 	padding-right: .5em;
 	}
 
+#btn-print {
+	font-size: .8em;
+	}
+
 #content-container {
 	height: calc(100% - 3rem);
 	overflow: hidden;
