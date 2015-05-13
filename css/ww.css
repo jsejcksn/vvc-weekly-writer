@@ -564,12 +564,6 @@ ul {
 	padding: 1rem;
 	}
 
-#ww-logo {
-	float: right;
-	height: 2rem;
-	margin: .5rem;
-	}
-
 #nav-week {
 	padding: 1rem;
 	}
@@ -577,6 +571,12 @@ ul {
 #nav-week > p {
 	margin: 0;
 	padding: 2rem;
+	}
+
+#ww-logo {
+	float: right;
+	height: 2rem;
+	margin: .5rem;
 	}
 
 
