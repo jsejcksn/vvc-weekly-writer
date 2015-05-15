@@ -551,7 +551,13 @@ function menuWeek() {
 	}
 
 function printPub() {
-	content.src = baseUrl + 'print.pdf';
+	var printWindow = window.open(baseUrl + 'print.pdf');
+	printWindow.focus();
+	setTimeout(function() {
+		printWindow.print();
+		printWindow.onfocus = function() {printWindow.close();};
+		},
+		1500);
 	}
 
 function setGrade(gr) {
