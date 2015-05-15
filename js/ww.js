@@ -557,7 +557,7 @@ function printPub() {
 		printWindow.print();
 		printWindow.onfocus = function() {printWindow.close();};
 		},
-		1500);
+		1000);
 	}
 
 function setGrade(gr) {
