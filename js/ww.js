@@ -553,8 +553,11 @@ function menuWeek() {
 function printPub() {
 	var printWindow = window.open(baseUrl + 'print.pdf');
 	printWindow.focus();
-	printWindow.print();
-	printWindow.onfocus = function() {printWindow.close();};
+	setTimeout(function() {
+		printWindow.print();
+		printWindow.onfocus = function() {printWindow.close();};
+		},
+		1500);
 	}
 
 function setGrade(gr) {
