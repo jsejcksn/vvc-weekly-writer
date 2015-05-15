@@ -546,9 +546,14 @@ ul {
 	padding-right: .5em;
 	}
 
+#btn-grade {
+	margin-left: .5em;
+	}
+
 #btn-print {
-	color: rgba(0, 0, 0, 0.5);
-	font-size: .8em;
+	color: rgba(0, 0, 0, .75);
+	/*font-size: .8em;*/
+	margin-left: 1rem;
 	}
 
 #content-container {
@@ -578,10 +583,19 @@ ul {
 	padding: 2rem;
 	}
 
+#print-icon {
+	/*margin-right: .5rem;*/
+	position: relative;
+	top: -.3rem;
+	vertical-align: middle;
+	width: 2.2rem;
+	}
+
 #ww-logo {
 	float: right;
 	height: 2rem;
 	margin: .5rem;
+	margin-right: 1em;
 	}
 
 
