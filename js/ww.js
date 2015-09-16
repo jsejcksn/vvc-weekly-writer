@@ -1,6 +1,7 @@
 // Virtual Village Classroom - Weekly Writer
 
 (function() {
+  'use strict';
 
   // Variables ----------
 
