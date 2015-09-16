@@ -1,5 +1,7 @@
 // Virtual Village Classroom - Weekly Writer
 
+(function() {
+
 // Variables ----------
 
 var baseUrl = '';
@@ -2224,3 +2226,5 @@ btnWeek836.addEventListener('click', function() {
 // Execute ----------
 
 console.log('VVC Weekly Writer');
+
+}());
