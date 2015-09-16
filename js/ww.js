@@ -519,7 +519,7 @@ function loadWeek() {
 	}
 
 function menuGrade() {
-	if (gradeVisible == false) {
+	if (gradeVisible === false) {
 		btnGrade.setAttribute('class', 'active');
 		navGrade.setAttribute('class', '');
 		gradeVisible = true;
@@ -527,7 +527,7 @@ function menuGrade() {
 		navWeek.setAttribute('class', 'hide');
 		weekVisible = false;
 		}
-	else if (gradeVisible == true) {
+	else if (gradeVisible === true) {
 		btnGrade.setAttribute('class', '');
 		navGrade.setAttribute('class', 'hide');
 		gradeVisible = false;
@@ -535,7 +535,7 @@ function menuGrade() {
 	}
 
 function menuWeek() {
-	if (weekVisible == false) {
+	if (weekVisible === false) {
 		btnWeek.setAttribute('class', 'active');
 		navWeek.setAttribute('class', '');
 		weekVisible = true;
@@ -543,7 +543,7 @@ function menuWeek() {
 		navGrade.setAttribute('class', 'hide');
 		gradeVisible = false;
 		}
-	else if (weekVisible == true) {
+	else if (weekVisible === true) {
 		btnWeek.setAttribute('class', '');
 		navWeek.setAttribute('class', 'hide');
 		weekVisible = false;
@@ -595,1630 +595,1630 @@ btnWeek001.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('1');
-	loadWeek();})
+	loadWeek();});
 btnWeek002.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('2');
-	loadWeek();})
+	loadWeek();});
 btnWeek003.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('3');
-	loadWeek();})
+	loadWeek();});
 btnWeek004.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('4');
-	loadWeek();})
+	loadWeek();});
 btnWeek005.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('5');
-	loadWeek();})
+	loadWeek();});
 btnWeek006.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('6');
-	loadWeek();})
+	loadWeek();});
 btnWeek007.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('7');
-	loadWeek();})
+	loadWeek();});
 btnWeek008.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('8');
-	loadWeek();})
+	loadWeek();});
 btnWeek009.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('9');
-	loadWeek();})
+	loadWeek();});
 btnWeek010.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('10');
-	loadWeek();})
+	loadWeek();});
 btnWeek011.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('11');
-	loadWeek();})
+	loadWeek();});
 btnWeek012.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('12');
-	loadWeek();})
+	loadWeek();});
 btnWeek013.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('13');
-	loadWeek();})
+	loadWeek();});
 btnWeek014.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('14');
-	loadWeek();})
+	loadWeek();});
 btnWeek015.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('15');
-	loadWeek();})
+	loadWeek();});
 btnWeek016.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('16');
-	loadWeek();})
+	loadWeek();});
 btnWeek017.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('17');
-	loadWeek();})
+	loadWeek();});
 btnWeek018.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('18');
-	loadWeek();})
+	loadWeek();});
 btnWeek019.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('19');
-	loadWeek();})
+	loadWeek();});
 btnWeek020.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('20');
-	loadWeek();})
+	loadWeek();});
 btnWeek021.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('21');
-	loadWeek();})
+	loadWeek();});
 btnWeek022.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('22');
-	loadWeek();})
+	loadWeek();});
 btnWeek023.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('23');
-	loadWeek();})
+	loadWeek();});
 btnWeek024.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('24');
-	loadWeek();})
+	loadWeek();});
 btnWeek025.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('25');
-	loadWeek();})
+	loadWeek();});
 btnWeek026.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('26');
-	loadWeek();})
+	loadWeek();});
 btnWeek027.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('27');
-	loadWeek();})
+	loadWeek();});
 btnWeek028.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('28');
-	loadWeek();})
+	loadWeek();});
 btnWeek029.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('29');
-	loadWeek();})
+	loadWeek();});
 btnWeek030.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('30');
-	loadWeek();})
+	loadWeek();});
 btnWeek031.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('31');
-	loadWeek();})
+	loadWeek();});
 btnWeek032.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('32');
-	loadWeek();})
+	loadWeek();});
 btnWeek033.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('33');
-	loadWeek();})
+	loadWeek();});
 btnWeek034.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('34');
-	loadWeek();})
+	loadWeek();});
 btnWeek035.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('35');
-	loadWeek();})
+	loadWeek();});
 btnWeek036.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('36');
-	loadWeek();})
+	loadWeek();});
 
 btnWeek101.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('1');
-	loadWeek();})
+	loadWeek();});
 btnWeek102.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('2');
-	loadWeek();})
+	loadWeek();});
 btnWeek103.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('3');
-	loadWeek();})
+	loadWeek();});
 btnWeek104.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('4');
-	loadWeek();})
+	loadWeek();});
 btnWeek105.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('5');
-	loadWeek();})
+	loadWeek();});
 btnWeek106.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('6');
-	loadWeek();})
+	loadWeek();});
 btnWeek107.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('7');
-	loadWeek();})
+	loadWeek();});
 btnWeek108.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('8');
-	loadWeek();})
+	loadWeek();});
 btnWeek109.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('9');
-	loadWeek();})
+	loadWeek();});
 btnWeek110.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('10');
-	loadWeek();})
+	loadWeek();});
 btnWeek111.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('11');
-	loadWeek();})
+	loadWeek();});
 btnWeek112.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('12');
-	loadWeek();})
+	loadWeek();});
 btnWeek113.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('13');
-	loadWeek();})
+	loadWeek();});
 btnWeek114.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('14');
-	loadWeek();})
+	loadWeek();});
 btnWeek115.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('15');
-	loadWeek();})
+	loadWeek();});
 btnWeek116.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('16');
-	loadWeek();})
+	loadWeek();});
 btnWeek117.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('17');
-	loadWeek();})
+	loadWeek();});
 btnWeek118.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('18');
-	loadWeek();})
+	loadWeek();});
 btnWeek119.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('19');
-	loadWeek();})
+	loadWeek();});
 btnWeek120.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('20');
-	loadWeek();})
+	loadWeek();});
 btnWeek121.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('21');
-	loadWeek();})
+	loadWeek();});
 btnWeek122.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('22');
-	loadWeek();})
+	loadWeek();});
 btnWeek123.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('23');
-	loadWeek();})
+	loadWeek();});
 btnWeek124.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('24');
-	loadWeek();})
+	loadWeek();});
 btnWeek125.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('25');
-	loadWeek();})
+	loadWeek();});
 btnWeek126.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('26');
-	loadWeek();})
+	loadWeek();});
 btnWeek127.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('27');
-	loadWeek();})
+	loadWeek();});
 btnWeek128.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('28');
-	loadWeek();})
+	loadWeek();});
 btnWeek129.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('29');
-	loadWeek();})
+	loadWeek();});
 btnWeek130.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('30');
-	loadWeek();})
+	loadWeek();});
 btnWeek131.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('31');
-	loadWeek();})
+	loadWeek();});
 btnWeek132.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('32');
-	loadWeek();})
+	loadWeek();});
 btnWeek133.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('33');
-	loadWeek();})
+	loadWeek();});
 btnWeek134.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('34');
-	loadWeek();})
+	loadWeek();});
 btnWeek135.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('35');
-	loadWeek();})
+	loadWeek();});
 btnWeek136.addEventListener('click', function() {
 	baseUrl = './pubs/0-01/';
 	docString = 'index.html';
 	setWeek('36');
-	loadWeek();})
+	loadWeek();});
 
 btnWeek201.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('1');
-	loadWeek();})
+	loadWeek();});
 btnWeek202.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('2');
-	loadWeek();})
+	loadWeek();});
 btnWeek203.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('3');
-	loadWeek();})
+	loadWeek();});
 btnWeek204.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('4');
-	loadWeek();})
+	loadWeek();});
 btnWeek205.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('5');
-	loadWeek();})
+	loadWeek();});
 btnWeek206.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('6');
-	loadWeek();})
+	loadWeek();});
 btnWeek207.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('7');
-	loadWeek();})
+	loadWeek();});
 btnWeek208.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('8');
-	loadWeek();})
+	loadWeek();});
 btnWeek209.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('9');
-	loadWeek();})
+	loadWeek();});
 btnWeek210.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('10');
-	loadWeek();})
+	loadWeek();});
 btnWeek211.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('11');
-	loadWeek();})
+	loadWeek();});
 btnWeek212.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('12');
-	loadWeek();})
+	loadWeek();});
 btnWeek213.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('13');
-	loadWeek();})
+	loadWeek();});
 btnWeek214.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('14');
-	loadWeek();})
+	loadWeek();});
 btnWeek215.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('15');
-	loadWeek();})
+	loadWeek();});
 btnWeek216.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('16');
-	loadWeek();})
+	loadWeek();});
 btnWeek217.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('17');
-	loadWeek();})
+	loadWeek();});
 btnWeek218.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('18');
-	loadWeek();})
+	loadWeek();});
 btnWeek219.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('19');
-	loadWeek();})
+	loadWeek();});
 btnWeek220.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('20');
-	loadWeek();})
+	loadWeek();});
 btnWeek221.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('21');
-	loadWeek();})
+	loadWeek();});
 btnWeek222.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('22');
-	loadWeek();})
+	loadWeek();});
 btnWeek223.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('23');
-	loadWeek();})
+	loadWeek();});
 btnWeek224.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('24');
-	loadWeek();})
+	loadWeek();});
 btnWeek225.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('25');
-	loadWeek();})
+	loadWeek();});
 btnWeek226.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('26');
-	loadWeek();})
+	loadWeek();});
 btnWeek227.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('27');
-	loadWeek();})
+	loadWeek();});
 btnWeek228.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('28');
-	loadWeek();})
+	loadWeek();});
 btnWeek229.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('29');
-	loadWeek();})
+	loadWeek();});
 btnWeek230.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('30');
-	loadWeek();})
+	loadWeek();});
 btnWeek231.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('31');
-	loadWeek();})
+	loadWeek();});
 btnWeek232.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('32');
-	loadWeek();})
+	loadWeek();});
 btnWeek233.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('33');
-	loadWeek();})
+	loadWeek();});
 btnWeek234.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('34');
-	loadWeek();})
+	loadWeek();});
 btnWeek235.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('35');
-	loadWeek();})
+	loadWeek();});
 btnWeek236.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('36');
-	loadWeek();})
+	loadWeek();});
 
 btnWeek301.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('1');
-	loadWeek();})
+	loadWeek();});
 btnWeek302.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('2');
-	loadWeek();})
+	loadWeek();});
 btnWeek303.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('3');
-	loadWeek();})
+	loadWeek();});
 btnWeek304.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('4');
-	loadWeek();})
+	loadWeek();});
 btnWeek305.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('5');
-	loadWeek();})
+	loadWeek();});
 btnWeek306.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('6');
-	loadWeek();})
+	loadWeek();});
 btnWeek307.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('7');
-	loadWeek();})
+	loadWeek();});
 btnWeek308.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('8');
-	loadWeek();})
+	loadWeek();});
 btnWeek309.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('9');
-	loadWeek();})
+	loadWeek();});
 btnWeek310.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('10');
-	loadWeek();})
+	loadWeek();});
 btnWeek311.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('11');
-	loadWeek();})
+	loadWeek();});
 btnWeek312.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('12');
-	loadWeek();})
+	loadWeek();});
 btnWeek313.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('13');
-	loadWeek();})
+	loadWeek();});
 btnWeek314.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('14');
-	loadWeek();})
+	loadWeek();});
 btnWeek315.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('15');
-	loadWeek();})
+	loadWeek();});
 btnWeek316.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('16');
-	loadWeek();})
+	loadWeek();});
 btnWeek317.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('17');
-	loadWeek();})
+	loadWeek();});
 btnWeek318.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('18');
-	loadWeek();})
+	loadWeek();});
 btnWeek319.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('19');
-	loadWeek();})
+	loadWeek();});
 btnWeek320.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('20');
-	loadWeek();})
+	loadWeek();});
 btnWeek321.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('21');
-	loadWeek();})
+	loadWeek();});
 btnWeek322.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('22');
-	loadWeek();})
+	loadWeek();});
 btnWeek323.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('23');
-	loadWeek();})
+	loadWeek();});
 btnWeek324.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('24');
-	loadWeek();})
+	loadWeek();});
 btnWeek325.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('25');
-	loadWeek();})
+	loadWeek();});
 btnWeek326.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('26');
-	loadWeek();})
+	loadWeek();});
 btnWeek327.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('27');
-	loadWeek();})
+	loadWeek();});
 btnWeek328.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('28');
-	loadWeek();})
+	loadWeek();});
 btnWeek329.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('29');
-	loadWeek();})
+	loadWeek();});
 btnWeek330.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('30');
-	loadWeek();})
+	loadWeek();});
 btnWeek331.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('31');
-	loadWeek();})
+	loadWeek();});
 btnWeek332.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('32');
-	loadWeek();})
+	loadWeek();});
 btnWeek333.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('33');
-	loadWeek();})
+	loadWeek();});
 btnWeek334.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('34');
-	loadWeek();})
+	loadWeek();});
 btnWeek335.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('35');
-	loadWeek();})
+	loadWeek();});
 btnWeek336.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('36');
-	loadWeek();})
+	loadWeek();});
 
 btnWeek401.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('1');
-	loadWeek();})
+	loadWeek();});
 btnWeek402.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('2');
-	loadWeek();})
+	loadWeek();});
 btnWeek403.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('3');
-	loadWeek();})
+	loadWeek();});
 btnWeek404.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('4');
-	loadWeek();})
+	loadWeek();});
 btnWeek405.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('5');
-	loadWeek();})
+	loadWeek();});
 btnWeek406.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('6');
-	loadWeek();})
+	loadWeek();});
 btnWeek407.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('7');
-	loadWeek();})
+	loadWeek();});
 btnWeek408.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('8');
-	loadWeek();})
+	loadWeek();});
 btnWeek409.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('9');
-	loadWeek();})
+	loadWeek();});
 btnWeek410.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('10');
-	loadWeek();})
+	loadWeek();});
 btnWeek411.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('11');
-	loadWeek();})
+	loadWeek();});
 btnWeek412.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('12');
-	loadWeek();})
+	loadWeek();});
 btnWeek413.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('13');
-	loadWeek();})
+	loadWeek();});
 btnWeek414.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('14');
-	loadWeek();})
+	loadWeek();});
 btnWeek415.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('15');
-	loadWeek();})
+	loadWeek();});
 btnWeek416.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('16');
-	loadWeek();})
+	loadWeek();});
 btnWeek417.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('17');
-	loadWeek();})
+	loadWeek();});
 btnWeek418.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('18');
-	loadWeek();})
+	loadWeek();});
 btnWeek419.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('19');
-	loadWeek();})
+	loadWeek();});
 btnWeek420.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('20');
-	loadWeek();})
+	loadWeek();});
 btnWeek421.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('21');
-	loadWeek();})
+	loadWeek();});
 btnWeek422.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('22');
-	loadWeek();})
+	loadWeek();});
 btnWeek423.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('23');
-	loadWeek();})
+	loadWeek();});
 btnWeek424.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('24');
-	loadWeek();})
+	loadWeek();});
 btnWeek425.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('25');
-	loadWeek();})
+	loadWeek();});
 btnWeek426.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('26');
-	loadWeek();})
+	loadWeek();});
 btnWeek427.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('27');
-	loadWeek();})
+	loadWeek();});
 btnWeek428.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('28');
-	loadWeek();})
+	loadWeek();});
 btnWeek429.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('29');
-	loadWeek();})
+	loadWeek();});
 btnWeek430.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('30');
-	loadWeek();})
+	loadWeek();});
 btnWeek431.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('31');
-	loadWeek();})
+	loadWeek();});
 btnWeek432.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('32');
-	loadWeek();})
+	loadWeek();});
 btnWeek433.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('33');
-	loadWeek();})
+	loadWeek();});
 btnWeek434.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('34');
-	loadWeek();})
+	loadWeek();});
 btnWeek435.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('35');
-	loadWeek();})
+	loadWeek();});
 btnWeek436.addEventListener('click', function() {
 	baseUrl = './pubs/2-01/';
 	docString = 'index.html';
 	setWeek('36');
-	loadWeek();})
+	loadWeek();});
 
 btnWeek501.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('1');
-	loadWeek();})
+	loadWeek();});
 btnWeek502.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('2');
-	loadWeek();})
+	loadWeek();});
 btnWeek503.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('3');
-	loadWeek();})
+	loadWeek();});
 btnWeek504.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('4');
-	loadWeek();})
+	loadWeek();});
 btnWeek505.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('5');
-	loadWeek();})
+	loadWeek();});
 btnWeek506.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('6');
-	loadWeek();})
+	loadWeek();});
 btnWeek507.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('7');
-	loadWeek();})
+	loadWeek();});
 btnWeek508.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('8');
-	loadWeek();})
+	loadWeek();});
 btnWeek509.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('9');
-	loadWeek();})
+	loadWeek();});
 btnWeek510.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('10');
-	loadWeek();})
+	loadWeek();});
 btnWeek511.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('11');
-	loadWeek();})
+	loadWeek();});
 btnWeek512.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('12');
-	loadWeek();})
+	loadWeek();});
 btnWeek513.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('13');
-	loadWeek();})
+	loadWeek();});
 btnWeek514.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('14');
-	loadWeek();})
+	loadWeek();});
 btnWeek515.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('15');
-	loadWeek();})
+	loadWeek();});
 btnWeek516.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('16');
-	loadWeek();})
+	loadWeek();});
 btnWeek517.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('17');
-	loadWeek();})
+	loadWeek();});
 btnWeek518.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('18');
-	loadWeek();})
+	loadWeek();});
 btnWeek519.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('19');
-	loadWeek();})
+	loadWeek();});
 btnWeek520.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('20');
-	loadWeek();})
+	loadWeek();});
 btnWeek521.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('21');
-	loadWeek();})
+	loadWeek();});
 btnWeek522.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('22');
-	loadWeek();})
+	loadWeek();});
 btnWeek523.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('23');
-	loadWeek();})
+	loadWeek();});
 btnWeek524.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('24');
-	loadWeek();})
+	loadWeek();});
 btnWeek525.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('25');
-	loadWeek();})
+	loadWeek();});
 btnWeek526.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('26');
-	loadWeek();})
+	loadWeek();});
 btnWeek527.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('27');
-	loadWeek();})
+	loadWeek();});
 btnWeek528.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('28');
-	loadWeek();})
+	loadWeek();});
 btnWeek529.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('29');
-	loadWeek();})
+	loadWeek();});
 btnWeek530.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('30');
-	loadWeek();})
+	loadWeek();});
 btnWeek531.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('31');
-	loadWeek();})
+	loadWeek();});
 btnWeek532.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('32');
-	loadWeek();})
+	loadWeek();});
 btnWeek533.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('33');
-	loadWeek();})
+	loadWeek();});
 btnWeek534.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('34');
-	loadWeek();})
+	loadWeek();});
 btnWeek535.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('35');
-	loadWeek();})
+	loadWeek();});
 btnWeek536.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('36');
-	loadWeek();})
+	loadWeek();});
 
 btnWeek601.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('1');
-	loadWeek();})
+	loadWeek();});
 btnWeek602.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('2');
-	loadWeek();})
+	loadWeek();});
 btnWeek603.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('3');
-	loadWeek();})
+	loadWeek();});
 btnWeek604.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('4');
-	loadWeek();})
+	loadWeek();});
 btnWeek605.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('5');
-	loadWeek();})
+	loadWeek();});
 btnWeek606.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('6');
-	loadWeek();})
+	loadWeek();});
 btnWeek607.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('7');
-	loadWeek();})
+	loadWeek();});
 btnWeek608.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('8');
-	loadWeek();})
+	loadWeek();});
 btnWeek609.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('9');
-	loadWeek();})
+	loadWeek();});
 btnWeek610.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('10');
-	loadWeek();})
+	loadWeek();});
 btnWeek611.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('11');
-	loadWeek();})
+	loadWeek();});
 btnWeek612.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('12');
-	loadWeek();})
+	loadWeek();});
 btnWeek613.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('13');
-	loadWeek();})
+	loadWeek();});
 btnWeek614.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('14');
-	loadWeek();})
+	loadWeek();});
 btnWeek615.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('15');
-	loadWeek();})
+	loadWeek();});
 btnWeek616.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('16');
-	loadWeek();})
+	loadWeek();});
 btnWeek617.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('17');
-	loadWeek();})
+	loadWeek();});
 btnWeek618.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('18');
-	loadWeek();})
+	loadWeek();});
 btnWeek619.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('19');
-	loadWeek();})
+	loadWeek();});
 btnWeek620.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('20');
-	loadWeek();})
+	loadWeek();});
 btnWeek621.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('21');
-	loadWeek();})
+	loadWeek();});
 btnWeek622.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('22');
-	loadWeek();})
+	loadWeek();});
 btnWeek623.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('23');
-	loadWeek();})
+	loadWeek();});
 btnWeek624.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('24');
-	loadWeek();})
+	loadWeek();});
 btnWeek625.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('25');
-	loadWeek();})
+	loadWeek();});
 btnWeek626.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('26');
-	loadWeek();})
+	loadWeek();});
 btnWeek627.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('27');
-	loadWeek();})
+	loadWeek();});
 btnWeek628.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('28');
-	loadWeek();})
+	loadWeek();});
 btnWeek629.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('29');
-	loadWeek();})
+	loadWeek();});
 btnWeek630.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('30');
-	loadWeek();})
+	loadWeek();});
 btnWeek631.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('31');
-	loadWeek();})
+	loadWeek();});
 btnWeek632.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('32');
-	loadWeek();})
+	loadWeek();});
 btnWeek633.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('33');
-	loadWeek();})
+	loadWeek();});
 btnWeek634.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('34');
-	loadWeek();})
+	loadWeek();});
 btnWeek635.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('35');
-	loadWeek();})
+	loadWeek();});
 btnWeek636.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('36');
-	loadWeek();})
+	loadWeek();});
 
 btnWeek701.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('1');
-	loadWeek();})
+	loadWeek();});
 btnWeek702.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('2');
-	loadWeek();})
+	loadWeek();});
 btnWeek703.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('3');
-	loadWeek();})
+	loadWeek();});
 btnWeek704.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('4');
-	loadWeek();})
+	loadWeek();});
 btnWeek705.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('5');
-	loadWeek();})
+	loadWeek();});
 btnWeek706.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('6');
-	loadWeek();})
+	loadWeek();});
 btnWeek707.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('7');
-	loadWeek();})
+	loadWeek();});
 btnWeek708.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('8');
-	loadWeek();})
+	loadWeek();});
 btnWeek709.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('9');
-	loadWeek();})
+	loadWeek();});
 btnWeek710.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('10');
-	loadWeek();})
+	loadWeek();});
 btnWeek711.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('11');
-	loadWeek();})
+	loadWeek();});
 btnWeek712.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('12');
-	loadWeek();})
+	loadWeek();});
 btnWeek713.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('13');
-	loadWeek();})
+	loadWeek();});
 btnWeek714.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('14');
-	loadWeek();})
+	loadWeek();});
 btnWeek715.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('15');
-	loadWeek();})
+	loadWeek();});
 btnWeek716.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('16');
-	loadWeek();})
+	loadWeek();});
 btnWeek717.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('17');
-	loadWeek();})
+	loadWeek();});
 btnWeek718.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('18');
-	loadWeek();})
+	loadWeek();});
 btnWeek719.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('19');
-	loadWeek();})
+	loadWeek();});
 btnWeek720.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('20');
-	loadWeek();})
+	loadWeek();});
 btnWeek721.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('21');
-	loadWeek();})
+	loadWeek();});
 btnWeek722.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('22');
-	loadWeek();})
+	loadWeek();});
 btnWeek723.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('23');
-	loadWeek();})
+	loadWeek();});
 btnWeek724.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('24');
-	loadWeek();})
+	loadWeek();});
 btnWeek725.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('25');
-	loadWeek();})
+	loadWeek();});
 btnWeek726.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('26');
-	loadWeek();})
+	loadWeek();});
 btnWeek727.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('27');
-	loadWeek();})
+	loadWeek();});
 btnWeek728.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('28');
-	loadWeek();})
+	loadWeek();});
 btnWeek729.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('29');
-	loadWeek();})
+	loadWeek();});
 btnWeek730.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('30');
-	loadWeek();})
+	loadWeek();});
 btnWeek731.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('31');
-	loadWeek();})
+	loadWeek();});
 btnWeek732.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('32');
-	loadWeek();})
+	loadWeek();});
 btnWeek733.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('33');
-	loadWeek();})
+	loadWeek();});
 btnWeek734.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('34');
-	loadWeek();})
+	loadWeek();});
 btnWeek735.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('35');
-	loadWeek();})
+	loadWeek();});
 btnWeek736.addEventListener('click', function() {
 	baseUrl = './pubs/5-01/';
 	docString = 'index.html';
 	setWeek('36');
-	loadWeek();})
+	loadWeek();});
 
 btnWeek801.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('1');
-	loadWeek();})
+	loadWeek();});
 btnWeek802.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('2');
-	loadWeek();})
+	loadWeek();});
 btnWeek803.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('3');
-	loadWeek();})
+	loadWeek();});
 btnWeek804.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('4');
-	loadWeek();})
+	loadWeek();});
 btnWeek805.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('5');
-	loadWeek();})
+	loadWeek();});
 btnWeek806.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('6');
-	loadWeek();})
+	loadWeek();});
 btnWeek807.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('7');
-	loadWeek();})
+	loadWeek();});
 btnWeek808.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('8');
-	loadWeek();})
+	loadWeek();});
 btnWeek809.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('9');
-	loadWeek();})
+	loadWeek();});
 btnWeek810.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('10');
-	loadWeek();})
+	loadWeek();});
 btnWeek811.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('11');
-	loadWeek();})
+	loadWeek();});
 btnWeek812.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('12');
-	loadWeek();})
+	loadWeek();});
 btnWeek813.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('13');
-	loadWeek();})
+	loadWeek();});
 btnWeek814.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('14');
-	loadWeek();})
+	loadWeek();});
 btnWeek815.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('15');
-	loadWeek();})
+	loadWeek();});
 btnWeek816.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('16');
-	loadWeek();})
+	loadWeek();});
 btnWeek817.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('17');
-	loadWeek();})
+	loadWeek();});
 btnWeek818.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('18');
-	loadWeek();})
+	loadWeek();});
 btnWeek819.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('19');
-	loadWeek();})
+	loadWeek();});
 btnWeek820.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('20');
-	loadWeek();})
+	loadWeek();});
 btnWeek821.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('21');
-	loadWeek();})
+	loadWeek();});
 btnWeek822.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('22');
-	loadWeek();})
+	loadWeek();});
 btnWeek823.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('23');
-	loadWeek();})
+	loadWeek();});
 btnWeek824.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('24');
-	loadWeek();})
+	loadWeek();});
 btnWeek825.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('25');
-	loadWeek();})
+	loadWeek();});
 btnWeek826.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('26');
-	loadWeek();})
+	loadWeek();});
 btnWeek827.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('27');
-	loadWeek();})
+	loadWeek();});
 btnWeek828.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('28');
-	loadWeek();})
+	loadWeek();});
 btnWeek829.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('29');
-	loadWeek();})
+	loadWeek();});
 btnWeek830.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('30');
-	loadWeek();})
+	loadWeek();});
 btnWeek831.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('31');
-	loadWeek();})
+	loadWeek();});
 btnWeek832.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('32');
-	loadWeek();})
+	loadWeek();});
 btnWeek833.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('33');
-	loadWeek();})
+	loadWeek();});
 btnWeek834.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('34');
-	loadWeek();})
+	loadWeek();});
 btnWeek835.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('35');
-	loadWeek();})
+	loadWeek();});
 btnWeek836.addEventListener('click', function() {
 	baseUrl = './pubs/8-01/';
 	docString = 'index.html';
 	setWeek('36');
-	loadWeek();})
+	loadWeek();});
 
 
 // Execute ----------
